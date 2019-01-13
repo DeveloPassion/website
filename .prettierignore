@@ -1,0 +1,11 @@
+.git/
+.github/
+.idea/
+.vscode/
+.cache/
+.tmp/
+dist/
+node_modules/
+package.json
+yarn.lock
+yarn-error.log
