@@ -1,0 +1,7 @@
+{
+  "extends": ["tslint:latest", "tslint-config-prettier"],
+  "rules": {
+    "no-redundant-jsdoc": true,
+    "interface-name": [true, "never-prefix"]
+  }
+}
