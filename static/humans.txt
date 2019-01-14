@@ -17,6 +17,10 @@
   React
   Gatsby
   Helmet
+  GraphQL
   Webpack  
   NodeJS
   Yarn
+  io-ts
+  prop-types-ts
+  
