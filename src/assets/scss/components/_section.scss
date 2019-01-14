@@ -9,9 +9,6 @@ article {
 
 header {
   &.major {
-    width: -moz-max-content;
-    width: -webkit-max-content;
-    width: -ms-max-content;
     width: max-content;
     margin-bottom: _size(element-margin);
 
@@ -19,7 +16,7 @@ header {
       margin-bottom: 0;
       width: calc(100% + 0.5em);
 
-      &:after {
+      &::after {
         content: "";
         background-color: _palette(fg-bold);
         display: block;
@@ -39,13 +36,13 @@ header {
 
     body.is-ie & {
       > :first-child {
-        &:after {
+        &::after {
           max-width: 9em;
         }
       }
 
       > h1 {
-        &:after {
+        &::after {
           max-width: 100% !important;
         }
       }

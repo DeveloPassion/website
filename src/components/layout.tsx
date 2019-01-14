@@ -48,7 +48,7 @@ export default class Layout extends React.Component<LayoutProps, LayoutState> {
 
     return (
       <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>
-        <div id="wrapper">
+        <div className="wrapper">
           <Header onToggleMenu={this.handleToggleMenu}/>
           {children}
           <Contact/>

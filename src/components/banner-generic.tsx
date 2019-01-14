@@ -18,7 +18,7 @@ export type BannerGenericProps = t.TypeOf<typeof BannerGenericRuntimeProps>
 export default class BannerGeneric extends React.Component<BannerGenericProps, {}> {
   public render() {
     return (
-      <section id="banner" className={this.props.className}>
+      <section className={`banner ${this.props.className}`}>
         <div className="inner">
           <header className="major">
             <h1>{this.props.title}</h1>

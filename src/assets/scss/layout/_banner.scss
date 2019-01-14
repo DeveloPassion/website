@@ -1,6 +1,6 @@
 /* Banner */
 
-#banner {
+.banner {
   @include vendor("align-items", "center");
   @include vendor("background-image", 'url("../images/banner.jpg")');
   @include vendor("display", "flex");
@@ -18,7 +18,7 @@
   position: relative;
   top: -3.25em;
 
-  &:after {
+  &::after {
     @include vendor("transition", "opacity #{_duration(banner)} ease");
     @include vendor("transition-delay", "0.75s");
     @include vendor("pointer-events", "none");
@@ -54,7 +54,7 @@
       > :first-child {
         width: auto;
 
-        &:after {
+        &::after {
           max-width: 100%;
         }
       }
@@ -94,38 +94,38 @@
   }
 
   &.style1 {
-    &:after {
+    &::after {
       background-color: _palette(accent1);
     }
   }
   &.style2 {
-    &:after {
+    &::after {
       background-color: _palette(accent2);
     }
   }
   &.style3 {
-    &:after {
+    &::after {
       background-color: _palette(accent3);
     }
   }
   &.style4 {
-    &:after {
+    &::after {
       background-color: _palette(accent4);
     }
   }
   &.style5 {
-    &:after {
+    &::after {
       background-color: _palette(accent5);
     }
   }
   &.style6 {
-    &:after {
+    &::after {
       background-color: _palette(accent6);
     }
   }
 
   .body.is-loading & {
-    &:after {
+    &::after {
       opacity: 1;
     }
 

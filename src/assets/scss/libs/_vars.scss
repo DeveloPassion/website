@@ -9,7 +9,6 @@ $duration: (
   transition: 0.2s,
   banner: 2.5s,
 );
-
 // Size.
 $size: (
   border-radius: 4px,
@@ -17,12 +16,11 @@ $size: (
   element-margin: 2em,
   inner: 65em,
 );
-
 // Font.
 $font: (
   family: (
     "Source Sans Pro",
-    Helvetica,
+    helvetica,
     sans-serif,
   ),
   family-fixed: (
@@ -34,7 +32,6 @@ $font: (
   letter-spacing: 0.025em,
   letter-spacing-alt: 0.25em,
 );
-
 // TODO test font
 $fontAlternative: (
   family: (
@@ -46,13 +43,12 @@ $fontAlternative: (
     monospace,
   ),
 );
-
 // Palette.
 $palette: (
   bg: #242943,
   bg-alt: #2a2f4a,
-  fg: #ffffff,
-  fg-bold: #ffffff,
+  fg: #fff,
+  fg-bold: #fff,
   fg-light: rgba(255, 255, 255, 1),
   border: rgba(212, 212, 255, 0.1),
   border-bg: rgba(212, 212, 255, 0.035),

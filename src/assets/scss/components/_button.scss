@@ -45,7 +45,7 @@ button,
   }
 
   &.icon {
-    &:before {
+    &::before {
       margin-right: 0.5em;
     }
   }
@@ -70,8 +70,8 @@ button,
     padding-right: 4.5em;
     position: relative;
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       @include vendor("transition", "opacity #{_duration(transition)} ease-in-out");
       background-position: center right;
       background-repeat: no-repeat;
@@ -86,13 +86,13 @@ button,
       width: 36px;
     }
 
-    &:before {
+    &::before {
       background-image: svg-url(
         '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36px" height="24px" viewBox="0 0 36 24" zoomAndPan="disable"><style>line { stroke: #{_palette(fg-bold)}; stroke-width: 2px; }</style><line x1="0" y1="12" x2="34" y2="12" /><line x1="25" y1="4" x2="34" y2="12.5" /><line x1="25" y1="20" x2="34" y2="11.5" /></svg>'
       );
     }
 
-    &:after {
+    &::after {
       background-image: svg-url(
         '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36px" height="24px" viewBox="0 0 36 24" zoomAndPan="disable"><style>line { stroke: #{_palette(highlight)}; stroke-width: 2px; }</style><line x1="0" y1="12" x2="34" y2="12" /><line x1="25" y1="4" x2="34" y2="12.5" /><line x1="25" y1="20" x2="34" y2="11.5" /></svg>'
       );
@@ -102,7 +102,7 @@ button,
 
     &:hover,
     &:active {
-      &:after {
+      &::after {
         opacity: 1;
       }
     }

@@ -14,7 +14,7 @@ export default ({data}: any) => (
       <meta name="description" content="Generic Page"/>
     </Helmet>
 
-    <div id="main" className="alt">
+    <div className="main alt">
       <section id="one">
         <div className="inner">
           <header className="major">

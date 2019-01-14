@@ -18,8 +18,8 @@ export default class Header extends React.Component<HeaderProps, {}> {
 
   public render() {
     return (
-      <header id="header" className="alt">
-        <Link to="/" className="logo"><strong>DeveloPassion</strong></Link>
+      <header className="header alt">
+        <Link to="/" className="logo"><strong><span className="logoHome icon fa-icon fa-home" />DeveloPassion</strong></Link>
         <nav>
           <a className="menu-link" onClick={this.props.onToggleMenu} href="javascript:">Menu</a>
         </nav>

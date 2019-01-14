@@ -11,7 +11,7 @@
 
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
+    font-family: FontAwesome, sans-serif;
     font-style: normal;
     font-weight: normal;
     text-transform: none !important;
@@ -194,15 +194,15 @@
 
 /// Adds debug styles to current flexgrid element.
 @mixin flexgrid-debug() {
-  box-shadow: 0 0 0 1px red;
+  box-shadow: 0 0 0 1px rgba(255, 0, 0);
 
   > * {
-    box-shadow: inset 0 0 0 1px blue;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 255);
     position: relative;
 
     > * {
       position: relative;
-      box-shadow: inset 0 0 0 1px green;
+      box-shadow: inset 0 0 0 1px rgba(0, 255, 0);
     }
   }
 }

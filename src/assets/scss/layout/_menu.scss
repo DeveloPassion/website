@@ -1,6 +1,6 @@
 /* Menu */
 
-#menu {
+.menu {
   @include vendor("transition", ("transform #{_duration(menu)} ease", "opacity #{_duration(menu)} ease", "visibility #{_duration(menu)}"));
   @include vendor("align-items", "center");
   @include vendor("display", "flex");
@@ -98,8 +98,8 @@
     white-space: nowrap;
     width: 8em;
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       @include vendor("transition", "opacity #{_duration(transition)} ease-in-out");
       background-position: center;
       background-repeat: no-repeat;
@@ -112,13 +112,13 @@
       width: 4em;
     }
 
-    &:before {
+    &::before {
       background-image: svg-url(
         '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 20 20" zoomAndPan="disable"><style>line { stroke: #{_palette(fg-bold)}; stroke-width: 2; }</style><line x1="0" y1="0" x2="20" y2="20" /><line x1="20" y1="0" x2="0" y2="20" /></svg>'
       );
     }
 
-    &:after {
+    &::after {
       background-image: svg-url(
         '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 20 20" zoomAndPan="disable"><style>line { stroke: #{_palette(highlight)}; stroke-width: 2; }</style><line x1="0" y1="0" x2="20" y2="20" /><line x1="20" y1="0" x2="0" y2="20" /></svg>'
       );
@@ -127,7 +127,7 @@
 
     &:hover,
     &:active {
-      &:after {
+      &::after {
         opacity: 1;
       }
     }
@@ -135,17 +135,17 @@
 }
 
 body.is-ie {
-  #menu {
+  .menu {
     background: transparentize(_palette(bg-alt), 0.025);
   }
 }
 
 .body.is-menu-visible {
-  #wrapper {
+  .wrapper {
     @include vendor("filter", "blur(0.5em)");
   }
 
-  #menu {
+  .menu {
     @include vendor("pointer-events", "auto");
     opacity: 1;
     visibility: visible;

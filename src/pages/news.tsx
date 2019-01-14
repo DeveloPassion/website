@@ -14,14 +14,14 @@ export default ({ data }: any) => (
       <meta name="description" content="News of the DeveloPassion company" />
     </Helmet>
 
-    <div id="main" className="alt">
+    <div className="main alt">
       <section id="one">
         <div className="inner">
           <header className="major">
             <h1>News</h1>
           </header>
           <span className="image main"><NonStretchedImage fluid={data.file.childImageSharp.fluid} /></span>
-          <p>Hello world.</p>
+          <p>Coming soon...</p>
         </div>
       </section>
     </div>

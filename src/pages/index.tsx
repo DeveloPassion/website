@@ -24,7 +24,7 @@ export default () => (
 
     <Banner/>
 
-    <div id="main">
+    <div className="main">
       <section id="one" className="tiles">
         <article style={{backgroundImage: `url(${path})`}}>
           <header className="major">

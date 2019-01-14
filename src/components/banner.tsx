@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 const Banner = () => (
-    <section id="banner" className="major">
+    <section className="banner major">
         <div className="inner">
             <header className="major">
                 <h1>Welcome to DeveloPassion's home</h1>

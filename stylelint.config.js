@@ -54,14 +54,14 @@ module.exports = {
 		"value-no-vendor-prefix": [
 			true,
 			{
-				message: "Don't use vendor prefixes: they are added when necessary by PostCSS.",
+				message: "Don't use vendor prefixes: they are added when necessary by Gatsby.",
 			},
 		],
 		"property-no-unknown": true,
 		"property-no-vendor-prefix": [
 			true,
 			{
-				message: "Don't use vendor prefixes: they are added when necessary by PostCSS.",
+				message: "Don't use vendor prefixes: they are added when necessary by Gatsby.",
 			},
 		],
 		"keyframe-declaration-no-important": [

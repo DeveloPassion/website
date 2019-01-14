@@ -24,7 +24,7 @@ export default class Menu extends React.Component<MenuProps, {}> {
 
   public render() {
     return (
-      <nav id="menu">
+      <nav className="menu">
         <div className="inner">
           <ul className="links">
             <li><Link onClick={this.props.onToggleMenu} to="/">Home</Link></li>

@@ -39,15 +39,14 @@ module.exports = {
 			},
 		},
 
-		// FIXME enable when lint issues fixed
-		// {
-		//     resolve: 'gatsby-plugin-stylelint',
-		//     options: {
-		//         configFile: ".stylelintrc",
-		//         emitErrors: false,
-		//         files: ["src/**/*.?(pc|sc|c|sa)ss"] // pcss|scss|css|sass
-		//     }
-		// },
+		{
+			resolve: "gatsby-plugin-stylelint",
+			options: {
+				configFile: ".stylelintrc",
+				emitErrors: false,
+				files: ["src/**/*.?(pc|sc|c|sa)ss"], // pcss|scss|css|sass
+			},
+		},
 
 		// images
 		{

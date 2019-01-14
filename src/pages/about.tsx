@@ -14,7 +14,7 @@ export default () => (
       <meta name="description" content="Information about the DeveloPassion company"/>
     </Helmet>
 
-    <div id="main" className="alt">
+    <div className="main alt">
       <section id="one">
         <div className="inner">
           <header className="major">

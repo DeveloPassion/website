@@ -26,7 +26,7 @@ export default class Services extends React.Component {
 
         <BannerGeneric className="class2" title="Services" subtitle="DeveloPassion is great at..."/>
 
-        <div id="main">
+        <div className="main">
           <section id="one">
             <div className="inner">
               <header className="major">

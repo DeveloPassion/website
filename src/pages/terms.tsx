@@ -13,7 +13,7 @@ export default ({data}: any) => (
       <meta name="description" content="DeveloPassion SPRL terms and conditions"/>
     </Helmet>
 
-    <div id="main" className="alt">
+    <div className="main alt">
       <section id="one">
         <div className="inner">
           <header className="major">

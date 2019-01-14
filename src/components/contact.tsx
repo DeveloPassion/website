@@ -38,7 +38,7 @@ export default class Contact extends React.Component<any, {}> {
           }
         }
 `} render={(data: any) => (
-        <section id="contact">
+        <section className="contact">
           <div className="inner">
             <section className="contact-logo">
               <DeveloPassionLogo />

@@ -1,6 +1,6 @@
 /* Contact */
 
-#contact {
+.contact {
   border-bottom: solid 1px _palette(border);
   overflow-x: hidden;
 
@@ -31,7 +31,7 @@
         @include padding(3em, 0, (0, 0, 0, 3em));
         position: relative;
 
-        &:before {
+        &::before {
           border-top: solid 1px _palette(border);
           content: "";
           display: block;
@@ -43,7 +43,7 @@
       }
 
       > :first-child {
-        &:before {
+        &::before {
           display: none;
         }
       }
@@ -69,12 +69,12 @@
         > * {
           @include padding(3em, 0, (0, 0, 0, 0));
 
-          &:before {
+          &::before {
           }
         }
 
         > :first-child {
-          &:before {
+          &::before {
             display: block;
           }
         }

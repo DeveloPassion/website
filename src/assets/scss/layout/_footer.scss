@@ -1,6 +1,6 @@
 /* Footer */
 
-#footer {
+.footer {
   div.inner {
     padding: 0.5em 0 0 0;
   }
@@ -10,18 +10,18 @@
     li.quote {
     }
 
-    blockquote:before {
+    blockquote::before {
       content: "“";
       font-weight: bold;
     }
 
-    blockquote:after {
+    blockquote::after {
       content: "”";
       font-weight: bold;
     }
 
-    blockquote:before,
-    blockquote:after {
+    blockquote::before,
+    blockquote::after {
     }
 
     blockquote {

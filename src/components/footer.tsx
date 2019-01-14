@@ -2,7 +2,6 @@ import * as React from 'react';
 
 // FIXME those imports MUST remain separate due to: https://github.com/AdamLeBlanc/gatsby-plugin-ts-loader/issues/1 
 import {graphql} from 'gatsby';
-
 import {StaticQuery} from 'gatsby';
 
 export default class Footer extends React.Component<any, {}> {
@@ -33,42 +32,46 @@ export default class Footer extends React.Component<any, {}> {
       }
     }
   }
-`} render={(data: any) => (<footer id="footer">
-        <div className="inner">
-          <ul className="icons">
-            <li><a href={data.site.siteMetadata.social.twitter}
-                   className="icon alt fa-twitter" target="_blank"><span
-              className="label">Twitter</span></a></li>
-            <li><a href={data.site.siteMetadata.social.github} className="icon alt fa-github"
-                   target="_blank"><span
-              className="label">GitHub</span></a></li>
-            <li><a href={data.site.siteMetadata.social.linkedIn} className="icon alt fa-linkedin"
-                   target="_blank"><span className="label">LinkedIn</span></a></li>
-            <li><a href={data.site.siteMetadata.social.facebook}
-                   className="icon alt fa-facebook" target="_blank"><span
-              className="label">Facebook</span></a></li>
-            <li><a href={data.site.siteMetadata.social.medium} className="icon alt fa-medium"
-                   target="_blank"><span className="label">Medium</span></a></li>
-            <li><a href={data.site.siteMetadata.social.slack} className="icon alt fa-slack"
-                   target="_blank"><span className="label">Slack</span></a></li>
-            <li><a href={data.site.siteMetadata.social.youtube} className="icon alt fa-youtube"
-                   target="_blank"><span className="label">YouTube</span></a></li>
-            <li className="quote"><br /><blockquote>{this.getRandomElement(data.site.siteMetadata.quotes)}</blockquote></li>
-          </ul>
-          <ul className="copyright">
-            <li>&copy; {new Date().getFullYear()} DeveloPassion SPRL</li>
-            <li>TVA/VAT: {data.site.siteMetadata.tva}</li>
-            <li><a href={data.site.siteMetadata.site.sources} className="icon alt fa-github fa-xs" target="_blank"/></li>
-            <li><a href={data.site.siteMetadata.social.twitterSebastien} target="_blank">dSebastien</a></li>
-            <li><a href="/terms">Terms and conditions (Conditions générales)</a></li>
-          </ul>
-        </div>
-      </footer>)}/>
+`} render={(data: any) => (
+        <footer className="footer">
+          <div className="inner">
+            <ul className="icons">
+              <li><a href={data.site.siteMetadata.social.twitter}
+                     className="icon alt fa-twitter" target="_blank"><span
+                className="label">Twitter</span></a></li>
+              <li><a href={data.site.siteMetadata.social.github} className="icon alt fa-github"
+                     target="_blank"><span
+                className="label">GitHub</span></a></li>
+              <li><a href={data.site.siteMetadata.social.linkedIn} className="icon alt fa-linkedin"
+                     target="_blank"><span className="label">LinkedIn</span></a></li>
+              <li><a href={data.site.siteMetadata.social.facebook}
+                     className="icon alt fa-facebook" target="_blank"><span
+                className="label">Facebook</span></a></li>
+              <li><a href={data.site.siteMetadata.social.medium} className="icon alt fa-medium"
+                     target="_blank"><span className="label">Medium</span></a></li>
+              <li><a href={data.site.siteMetadata.social.slack} className="icon alt fa-slack"
+                     target="_blank"><span className="label">Slack</span></a></li>
+              <li><a href={data.site.siteMetadata.social.youtube} className="icon alt fa-youtube"
+                     target="_blank"><span className="label">YouTube</span></a></li>
+              <li className="quote"><br/>
+                <blockquote>{this.getRandomElement(data.site.siteMetadata.quotes)}</blockquote>
+              </li>
+            </ul>
+            <ul className="copyright">
+              <li>&copy; {new Date().getFullYear()} DeveloPassion SPRL</li>
+              <li>TVA/VAT: {data.site.siteMetadata.tva}</li>
+              <li><a href={data.site.siteMetadata.site.sources} className="icon alt fa-github fa-xs" target="_blank"/>
+              </li>
+              <li><a href={data.site.siteMetadata.social.twitterSebastien} target="_blank">dSebastien</a></li>
+              <li><a href="/terms">Terms and conditions (Conditions générales)</a></li>
+            </ul>
+          </div>
+        </footer>)}/>
     )
   }
-  
+
   public getRandomElement(array: ReadonlyArray<string>): string {
-    if(!array) {
+    if (!array) {
       return ''; // oops :)
     }
     return array[Math.floor(Math.random() * array.length)];

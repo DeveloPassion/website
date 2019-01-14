@@ -1,3 +1,6 @@
 {
-  "extends": "./stylelint.config.js"
+  "extends": "./stylelint.config.js",
+  "rules": {
+    
+  }
 }

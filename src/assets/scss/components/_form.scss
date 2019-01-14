@@ -98,7 +98,7 @@ textarea {
   display: block;
   position: relative;
 
-  &:before {
+  &::before {
     color: _palette(border);
     content: "\f078";
     display: block;
@@ -151,7 +151,7 @@ input[type="radio"] {
     padding-right: 0.75em;
     position: relative;
 
-    &:before {
+    &::before {
       background: _palette(border-bg);
       content: "";
       display: inline-block;
@@ -167,7 +167,7 @@ input[type="radio"] {
   }
 
   &:checked + label {
-    &:before {
+    &::before {
       background: _palette(fg-bold);
       border-color: _palette(highlight);
       content: "\f00c";
@@ -176,7 +176,7 @@ input[type="radio"] {
   }
 
   &:focus + label {
-    &:before {
+    &::before {
       box-shadow: 0 0 0 2px _palette(highlight);
     }
   }
@@ -184,14 +184,14 @@ input[type="radio"] {
 
 input[type="checkbox"] {
   & + label {
-    &:before {
+    &::before {
     }
   }
 }
 
 input[type="radio"] {
   & + label {
-    &:before {
+    &::before {
       border-radius: 100%;
     }
   }

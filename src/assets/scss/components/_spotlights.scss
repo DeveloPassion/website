@@ -26,7 +26,7 @@
         width: 100%;
       }
 
-      &:before {
+      &::before {
         background: transparentize(_palette(bg), 0.1);
         content: "";
         display: block;

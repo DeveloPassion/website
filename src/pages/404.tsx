@@ -6,7 +6,7 @@ import Layout from '../components/layout';
 // -> maybe also switch to class
 const NotFoundPage = () => (
   <Layout>
-    <div id="main" className="alt">
+    <div className="main alt">
         <section id="one">
             <div className="inner">
                 <h1>Page not found :(</h1>

@@ -10,7 +10,7 @@
   }
 
   &.alt {
-    &:before {
+    &::before {
       background-color: _palette(fg-bold);
       border-radius: 100%;
       color: _palette(bg);
@@ -25,18 +25,18 @@
 
 a.icon {
   &.alt {
-    &:before {
+    &::before {
       @include vendor("transition", "background-color #{_duration(transition)} ease-in-out");
     }
 
     &:hover {
-      &:before {
+      &::before {
         background-color: _palette(accent1);
       }
     }
 
     &:active {
-      &:before {
+      &::before {
         background-color: desaturate(darken(_palette(accent1), 15), 5);
       }
     }

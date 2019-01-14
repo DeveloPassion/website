@@ -25,8 +25,8 @@ body {
   // Automatically added/removed by js/main.js.
   &.is-loading {
     *,
-    *:before,
-    *:after {
+    *::before,
+    *::after {
       @include vendor("animation", "none !important");
       @include vendor("transition", "none !important");
     }
