@@ -23,7 +23,6 @@
   line-height: 3.25em;
   margin: 0;
   position: fixed;
-  text-transform: uppercase;
   top: 0;
   width: 100%;
   z-index: _misc(z-index-base);
@@ -72,6 +71,8 @@
     @include vendor("flex-grow", "1");
     height: inherit;
     line-height: inherit;
+
+    text-transform: uppercase;
 
     a {
       border: 0;
