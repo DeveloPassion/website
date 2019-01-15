@@ -38,7 +38,9 @@ SVGs:
 
 ## TODO
 
--   i18n: https://www.npmjs.com/package/gatsby-plugin-i18n
+-   i18n
+    ** https://www.npmjs.com/package/gatsby-plugin-i18n
+    ** https://www.npmjs.com/package/react-intl
 -   Add news support
     ** https://github.com/gatsbyjs/gatsby-starter-blog
     ** markdown support with remark: https://github.com/gatsbyjs/gatsby/tree/master/examples/using-remark
