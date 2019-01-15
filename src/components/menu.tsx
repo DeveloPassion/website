@@ -25,6 +25,7 @@ export default class Menu extends React.Component<MenuProps, {}> {
             <li><Link onClick={this.props.onToggleMenu} to="/news">News</Link></li>
             <li><Link onClick={this.props.onToggleMenu} to="/services">Services</Link></li>
             <li><Link onClick={this.props.onToggleMenu} to="/about">About</Link></li>
+            <li><Link onClick={this.props.onToggleMenu} to="/team">Team</Link></li>
           </ul>
           <ul className="actions vertical">
             {/*

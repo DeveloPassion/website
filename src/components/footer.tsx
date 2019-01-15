@@ -14,10 +14,7 @@ export default class Footer extends React.Component<any, {}> {
       siteMetadata {
         author
         quotes
-        site {
-          url
-          sources
-        }
+        siteSources
         social {
           facebook
           github
@@ -60,7 +57,7 @@ export default class Footer extends React.Component<any, {}> {
             <ul className="copyright">
               <li>&copy; {new Date().getFullYear()} DeveloPassion SPRL</li>
               <li>TVA/VAT: {data.site.siteMetadata.tva}</li>
-              <li><a href={data.site.siteMetadata.site.sources} className="icon alt fa-github fa-xs" target="_blank" rel="noreferrer" title="DeveloPassion's Website sources"/>
+              <li><a href={data.site.siteMetadata.siteSources} className="icon alt fa-github fa-xs" target="_blank" rel="noreferrer" title="DeveloPassion's Website sources"/>
               </li>
               <li><a href={data.site.siteMetadata.social.twitterSebastien} target="_blank" rel="noreferrer" title="dSebastien @ Twitter">dSebastien</a></li>
               <li><a href="/terms">Terms and conditions (Conditions générales)</a></li>

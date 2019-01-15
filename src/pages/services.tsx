@@ -148,7 +148,7 @@ export const query = graphql`
         }
       }
     }
-    imageAgile:file(relativePath: { eq: "team02.jpg" }) {
+    imageAgile:file(relativePath: { eq: "planning.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1500) {
           ...GatsbyImageSharpFluid_withWebp

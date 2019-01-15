@@ -38,7 +38,7 @@ SVGs:
 
 ## TODO
 
--   Add Team page
+-   Replace <a href... with Gatsby links
 -   Add sitemap: https://www.npmjs.com/package/gatsby-plugin-sitemap
 -   Add news support
     ** https://github.com/gatsbyjs/gatsby-starter-blog
@@ -47,15 +47,11 @@ SVGs:
     \*\* https://www.npmjs.com/package/gatsby-remark-responsive-iframe
 -   Google analytics: gatsby-plugin-google-analytics
 -   SEO: https://www.gatsbyjs.org/docs/add-seo-component/
--   Improve 404, add image and text
+-   Improve 404, add image
     ** link \*** import {Link} from 'gatsby';
     \*\*\* <Link to="/" className="logo"><strong>DeveloPassion</strong></Link>
 -   GDPR and privacy policy
 -   i18n: https://www.npmjs.com/package/gatsby-plugin-i18n
--   Audit with Lighthouse: https://developers.google.com/web/tools/lighthouse/
-    -   Automate Lighthouse
--   Check pagespeed: https://developers.google.com/speed/pagespeed/insights/
--   Check structured data: https://search.google.com/structured-data/testing-tool/u/0/
 
 Blocked by domain acquisition:
 
@@ -73,6 +69,9 @@ Blocked by Gatsby:
 
 Other:
 
+-   Continue Lighthouse audit: https://developers.google.com/web/tools/lighthouse/
+-   Check pagespeed: https://developers.google.com/speed/pagespeed/insights/
+-   Check structured data: https://search.google.com/structured-data/testing-tool/u/0/
 -   Add GreenKeeper
 -   Add "tslint-sonarts", to tslint.json once this is fixed: https://github.com/AdamLeBlanc/gatsby-plugin-ts-loader/issues/2
     -   and adapt package.json tslint script
@@ -83,5 +82,5 @@ Other:
 
 Ideas:
 
--   add keyboard support on services page (go from one block to the next)
+-   add keyboard support on services page (go from one block to the next): https://www.npmjs.com/package/react-hotkeys
 -   Condense a bit (reduce top/bottom margins on desktop)

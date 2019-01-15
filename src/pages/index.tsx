@@ -46,18 +46,37 @@ export default ({data}:any) => (
           </header>
           <Link to="/services" className="link primary" title="Services" />
         </article>
+        <article>
+          <NonStretchedImage fluid={data.imageTeam.childImageSharp.fluid} style={backgroundImage} />
+          <header className="major">
+            <h3>Team</h3>
+            <p>Meet our team.</p>
+          </header>
+          <Link to="/team" className="link primary" title="Team" />
+        </article>
+        <article>
+          <NonStretchedImage fluid={data.imageNews.childImageSharp.fluid} style={backgroundImage} />
+          <header className="major">
+            <h3>News</h3>
+            <p>Discover what we've been up to recently!</p>
+          </header>
+
+          <Link to="/news" className="link primary" title="News" />
+        </article>
       </section>
+      {/*
       <section id="two">
         <div className="inner">
           <header className="major">
             <h2>News</h2>
           </header>
-          <p>Discover what we've been up to recently!</p>
+          
           <ul className="actions">
-            <li><Link to="/news" className="button next" title="News">Read ...</Link></li>
+            <li><Link to="/news" className="button next" title="News">Go!</Link></li>
           </ul>
         </div>
       </section>
+      */}
     </div>
   </Layout>
 );
@@ -72,6 +91,20 @@ export const query = graphql`
       }
     }
     imageServices:file(relativePath: { eq: "consultancy.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1500) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    imageTeam:file(relativePath: { eq: "team02.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1500) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    imageNews:file(relativePath: { eq: "news.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1500) {
           ...GatsbyImageSharpFluid_withWebp
