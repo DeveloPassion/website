@@ -13,6 +13,7 @@ export interface LayoutState {
   loading: string;
   isMenuVisible: boolean;
 }
+
 export default class Layout extends React.Component<LayoutProps, LayoutState> {
   private timeoutId: number | undefined;
 

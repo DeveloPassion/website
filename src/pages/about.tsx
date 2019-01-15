@@ -23,20 +23,19 @@ export default () => (
           <span className="image about"><DeveloPassionWideLogo/></span>
           <p>
             <strong>DeveloPassion</strong> is a Belgian IT consultancy firm, specialized in:
-            <ul>
-              <li>Software development</li>
-              <li>Software architecture</li>
-              <li>Digital transformation and innovation</li>
-              <li>Software and infrastructure security hardening</li>
-              <li>Agile project and team management</li>
-            </ul>
           </p>
+          <ul>
+            <li>Software development</li>
+            <li>Software architecture</li>
+            <li>Digital transformation and innovation</li>
+            <li>Software and infrastructure security hardening</li>
+            <li>Agile project and team management</li>
+          </ul>
 
           <p>If you are looking for passionate partners to assist you, then look no further and <a href="#contact">get
             in touch with us!</a></p>
 
           <h2>Our company values</h2>
-          <p>
             <ul>
               <li><strong>Transparency</strong> is important to us. Only through it can we best collaborate.</li>
               <li><strong>Openness</strong> is part of our philosophy. We strongly believe in <strong>Free and Open Source Software
@@ -53,7 +52,6 @@ export default () => (
               <li>We think that all relationships require <strong>respect</strong>, <strong>kindness</strong> and <strong>care</strong>.</li>
             </ul>
             Finally, we believe that teams are most productive when they have <strong>fun</strong>. We keep a positive attitude, no matter what!
-          </p>
           <p><a href="/services" className="button fit">Learn more...</a></p>
         </div>
       </section>

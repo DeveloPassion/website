@@ -15,6 +15,7 @@ import {backgroundImage} from "../utils/images";
 export default ({data}:any) => (
   <Layout>
     <Helmet>
+      <html lang="en" />
       <meta charSet="utf-8"/>
       <meta httpEquiv="x-ua-compatible" content="ie=edge"/>
       <title>DeveloPassion</title>
@@ -22,6 +23,7 @@ export default ({data}:any) => (
       <meta name="keywords" content="developassion, software, development, architecture, web"/>
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
       <link rel="canonical" href="https://www.developassion.be/robots.txt"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com"/>
     </Helmet>
 
     <Banner/>
@@ -34,15 +36,15 @@ export default ({data}:any) => (
             <h3>About DeveloPassion</h3>
             <p>Learn more about our company.</p>
           </header>
-          <Link to="/about" className="link primary" />
+          <Link to="/about" className="link primary" title="About" />
         </article>
         <article>
-          <NonStretchedImage fluid={data.imageTeam.childImageSharp.fluid} style={backgroundImage} />
+          <NonStretchedImage fluid={data.imageServices.childImageSharp.fluid} style={backgroundImage} />
           <header className="major">
             <h3>Services</h3>
             <p>Discover our services.</p>
           </header>
-          <Link to="/services" className="link primary" />
+          <Link to="/services" className="link primary" title="Services" />
         </article>
       </section>
       <section id="two">
@@ -52,7 +54,7 @@ export default ({data}:any) => (
           </header>
           <p>Discover what we've been up to recently!</p>
           <ul className="actions">
-            <li><Link to="/news" className="button next">Read ...</Link></li>
+            <li><Link to="/news" className="button next" title="News">Read ...</Link></li>
           </ul>
         </div>
       </section>
@@ -69,7 +71,7 @@ export const query = graphql`
         }
       }
     }
-    imageTeam:file(relativePath: { eq: "team01.jpg" }) {
+    imageServices:file(relativePath: { eq: "consultancy.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1500) {
           ...GatsbyImageSharpFluid_withWebp

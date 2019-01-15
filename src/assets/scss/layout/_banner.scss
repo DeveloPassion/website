@@ -2,9 +2,31 @@
 
 .banner {
   @include vendor("align-items", "center");
-  @include vendor("background-image", 'url("../images/banner.jpg")');
   @include vendor("display", "flex");
   @include padding(4em, 0, (2em, 0, 0, 0));
+
+  background-image: url("../images/banner-2560.jpg");
+
+  @include breakpoint(large) {
+    background-image: url("../images/banner-1280.jpg");
+  }
+
+  @include breakpoint(medium) {
+    background-image: url("../images/banner-980.jpg");
+  }
+
+  @include breakpoint(small) {
+    background-image: url("../images/banner-736.jpg");
+  }
+
+  @include breakpoint(xsmall) {
+    background-image: url("../images/banner-480.jpg");
+  }
+
+  @include breakpoint(xxsmall) {
+    background-image: url("../images/banner-360.jpg");
+  }
+
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -136,7 +158,7 @@
     }
   }
 
-  @include breakpoint(large) {
+  @include breakpoint(small) {
     background-attachment: scroll;
   }
 

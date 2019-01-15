@@ -39,14 +39,11 @@ SVGs:
 ## TODO
 
 -   Add Team page
--   Audit with Lighthouse: https://developers.google.com/web/tools/lighthouse/
-    -   Automate Lighthouse
 -   Add sitemap: https://www.npmjs.com/package/gatsby-plugin-sitemap
 -   Add news support
     ** https://github.com/gatsbyjs/gatsby-starter-blog
-    ** markdown support
-    ** remark
-    ** https://github.com/gatsbyjs/gatsby/tree/master/examples/using-remark
+    ** markdown support with remark: https://github.com/gatsbyjs/gatsby/tree/master/examples/using-remark
+    \*\* inspiration: https://github.com/scttcper/gatsby-casper (reading time, tag page, subscribe, author page)
     \*\* https://www.npmjs.com/package/gatsby-remark-responsive-iframe
 -   Google analytics: gatsby-plugin-google-analytics
 -   SEO: https://www.gatsbyjs.org/docs/add-seo-component/
@@ -55,11 +52,10 @@ SVGs:
     \*\*\* <Link to="/" className="logo"><strong>DeveloPassion</strong></Link>
 -   GDPR and privacy policy
 -   i18n: https://www.npmjs.com/package/gatsby-plugin-i18n
--   Add GreenKeeper
--   test fontAlternative with Hack font: https://github.com/source-foundry/Hack/blob/master/docs/WEBFONT_USAGE.md
--   add ARIA labels
--   add keyboard support on services page (go from one block to the next)
--   Condense a bit (reduce top/bottom margins on desktop)
+-   Audit with Lighthouse: https://developers.google.com/web/tools/lighthouse/
+    -   Automate Lighthouse
+-   Check pagespeed: https://developers.google.com/speed/pagespeed/insights/
+-   Check structured data: https://search.google.com/structured-data/testing-tool/u/0/
 
 Blocked by domain acquisition:
 
@@ -77,12 +73,15 @@ Blocked by Gatsby:
 
 Other:
 
+-   Add GreenKeeper
 -   Add "tslint-sonarts", to tslint.json once this is fixed: https://github.com/AdamLeBlanc/gatsby-plugin-ts-loader/issues/2
     -   and adapt package.json tslint script
     -   and remove tslint-npm.json
--   inspiration
-    -   https://github.com/scttcper/gatsby-casper (reading time, tag page, subscribe, author page)
--   Check pagespeed: https://developers.google.com/speed/pagespeed/insights/
 -   Add typechecking for graphql queries: https://www.gatsbyjs.org/docs/static-query/
     \*\* do it using io-ts
 -   Add testing: https://www.gatsbyjs.org/docs/testing/
+
+Ideas:
+
+-   add keyboard support on services page (go from one block to the next)
+-   Condense a bit (reduce top/bottom margins on desktop)
