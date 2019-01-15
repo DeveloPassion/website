@@ -22,10 +22,14 @@ Adapt metadata.js
 
 ## Images
 
+Loaded through GraphQL with Gatsby Image. Generates various sizes etc automatically.
+
 Plugin used:
 
+-   https://www.gatsbyjs.org/packages/gatsby-image/
 -   https://codebushi.com/using-gatsby-image/
 -   https://using-gatsby-image.gatsbyjs.org/
+-   https://www.gatsbyjs.org/packages/gatsby-plugin-sharp/
 
 SVGs:
 
@@ -34,14 +38,11 @@ SVGs:
 
 ## TODO
 
--   Pages
-    -   News
-    -   Team
--   Condense
+-   Add Team page
 -   Audit with Lighthouse: https://developers.google.com/web/tools/lighthouse/
     -   Automate Lighthouse
 -   Add sitemap: https://www.npmjs.com/package/gatsby-plugin-sitemap
--   Add news
+-   Add news support
     ** https://github.com/gatsbyjs/gatsby-starter-blog
     ** markdown support
     ** remark
@@ -58,9 +59,9 @@ SVGs:
 -   test fontAlternative with Hack font: https://github.com/source-foundry/Hack/blob/master/docs/WEBFONT_USAGE.md
 -   add ARIA labels
 -   add keyboard support on services page (go from one block to the next)
+-   Condense a bit (reduce top/bottom margins on desktop)
 
-Blocked by domain acquisition:  
-
+Blocked by domain acquisition:
 
 -   Enable GH pages: https://github.com/DeveloPassion/website/settings
 -   Create GH pages branch
@@ -81,10 +82,7 @@ Other:
     -   and remove tslint-npm.json
 -   inspiration
     -   https://github.com/scttcper/gatsby-casper (reading time, tag page, subscribe, author page)
--   check pagespeed: https://developers.google.com/speed/pagespeed/insights/
--   add typechecking for graphql queries: https://www.gatsbyjs.org/docs/static-query/
-    ** do it using io-ts
-    ** footer.tsx
-    \*\* contact.tsx
--   Fix lint-css issues
--   add testing: https://www.gatsbyjs.org/docs/testing/
+-   Check pagespeed: https://developers.google.com/speed/pagespeed/insights/
+-   Add typechecking for graphql queries: https://www.gatsbyjs.org/docs/static-query/
+    \*\* do it using io-ts
+-   Add testing: https://www.gatsbyjs.org/docs/testing/

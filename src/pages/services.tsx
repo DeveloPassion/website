@@ -2,23 +2,15 @@ import * as React from 'react';
 
 import Helmet from 'react-helmet';
 
+import {graphql} from "gatsby";
+
 import BannerGeneric from '../components/banner-generic';
 import Layout from '../components/layout';
 
-import architecture = require('../assets/images/architecture01.jpg');
-import digital = require('../assets/images/digital02.jpg');
-import development = require('../assets/images/keyboard.jpg');
-import security = require('../assets/images/security.jpg');
-import agile = require('../assets/images/team02.jpg');
+import NonStretchedImage from "../components/non-stretched-image";
 
-export default class Services extends React.Component {
-
-  constructor({props}: any) {
-    super(props);
-  }
-
-  public render() {
-    return (<Layout>
+export default ({data}:any) => (
+  <Layout>
         <Helmet>
           <title>Services</title>
           <meta name="description" content="Services"/>
@@ -49,7 +41,7 @@ export default class Services extends React.Component {
           <section id="services-software-development" className="spotlights">
             <section>
               <span className="image">
-                <img src={development} alt="Software Development"/>
+                <NonStretchedImage fluid={data.imageDevelopment.childImageSharp.fluid} alt="Software Development" />
               </span>
               <div className="content">
                 <div className="inner">
@@ -67,7 +59,7 @@ export default class Services extends React.Component {
 
             <section id="services-software-architecture">
               <span className="image">
-                <img src={architecture} alt="Software and enterprise architecture"/>
+                <NonStretchedImage fluid={data.imageArchitecture.childImageSharp.fluid} alt="Software and enterprise architecture" />
               </span>
               <div className="content">
                 <div className="inner">
@@ -82,7 +74,7 @@ export default class Services extends React.Component {
 
             <section id="services-digital-transformation">
               <span className="image">
-                <img src={digital} alt="Digital transformation and innovation"/>
+                <NonStretchedImage fluid={data.imageDigital.childImageSharp.fluid} alt="Digital transformation and innovation" />
               </span>
               <div className="content">
                 <div className="inner">
@@ -96,7 +88,7 @@ export default class Services extends React.Component {
 
             <section id="services-security-hardening">
               <span className="image">
-                <img src={security} alt="Software and infrastructure security hardening"/>
+                <NonStretchedImage fluid={data.imageSecurity.childImageSharp.fluid} alt="Software and infrastructure security hardening" />
               </span>
               <div className="content">
                 <div className="inner">
@@ -110,7 +102,7 @@ export default class Services extends React.Component {
 
             <section id="services-agile-pm">
               <span className="image">
-                <img src={agile} alt="Agile project and team management"/>
+                <NonStretchedImage fluid={data.imageAgile.childImageSharp.fluid} alt="Agile project and team management" />
               </span>
               <div className="content">
                 <div className="inner">
@@ -125,5 +117,43 @@ export default class Services extends React.Component {
         </div>
       </Layout>
     );
+
+export const query = graphql`
+  query {
+    imageArchitecture:file(relativePath: { eq: "architecture01.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1500) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    imageDigital:file(relativePath: { eq: "digital02.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1500) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    imageDevelopment:file(relativePath: { eq: "keyboard.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1500) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    imageSecurity:file(relativePath: { eq: "security.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1500) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    imageAgile:file(relativePath: { eq: "team02.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1500) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
   }
-}
+`;

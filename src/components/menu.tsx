@@ -16,12 +16,6 @@ export type MenuProps = t.TypeOf<typeof MenuRuntimeProps>
 @props(MenuRuntimeProps)
 export default class Menu extends React.Component<MenuProps, {}> {
 
-  /*
-  constructor(props: MenuProps) {
-    super(props);
-  }
-  */
-
   public render() {
     return (
       <nav className="menu">

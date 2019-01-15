@@ -1,4 +1,4 @@
-/* Image */
+/* Images */
 
 .image {
   border: 0;
@@ -76,4 +76,12 @@
       }
     }
   }
+}
+
+.backgroundImg {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
