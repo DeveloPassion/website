@@ -50,7 +50,7 @@ ul {
 
     @include breakpoint(small) {
       li {
-        padding: 0 0.75em 0 0;
+        padding: 0.5em 0.75em 0 0;
       }
     }
   }
