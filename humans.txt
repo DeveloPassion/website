@@ -1,0 +1,26 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  DeveloPassion -- https://www.developassion.be -- https://twitter.com/DeveloPassion
+  Sébastien Dubois -- Owner -- https://twitter.com/dSebastien
+
+# THANKS
+
+  Thanks to the open source community!
+
+# TECHNOLOGY COLOPHON
+  HTML5
+  CSS3
+  TypeScript / ES20xy
+  React
+  Gatsby
+  Helmet
+  GraphQL
+  Webpack  
+  NodeJS
+  Yarn
+  io-ts
+  prop-types-ts
+  
