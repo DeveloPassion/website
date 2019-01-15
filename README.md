@@ -39,17 +39,12 @@ SVGs:
 ## TODO
 
 -   Replace <a href... with Gatsby links
--   Add sitemap: https://www.npmjs.com/package/gatsby-plugin-sitemap
 -   Add news support
     ** https://github.com/gatsbyjs/gatsby-starter-blog
     ** markdown support with remark: https://github.com/gatsbyjs/gatsby/tree/master/examples/using-remark
     \*\* inspiration: https://github.com/scttcper/gatsby-casper (reading time, tag page, subscribe, author page)
     \*\* https://www.npmjs.com/package/gatsby-remark-responsive-iframe
--   Google analytics: gatsby-plugin-google-analytics
 -   SEO: https://www.gatsbyjs.org/docs/add-seo-component/
--   Improve 404, add image
-    ** link \*** import {Link} from 'gatsby';
-    \*\*\* <Link to="/" className="logo"><strong>DeveloPassion</strong></Link>
 -   GDPR and privacy policy
 -   i18n: https://www.npmjs.com/package/gatsby-plugin-i18n
 
@@ -59,6 +54,7 @@ Blocked by domain acquisition:
 -   Create GH pages branch
 -   Build: push public/ to GH pages branch
 -   Sec headers (CloudFlare)
+-   Google analytics: gatsby-plugin-google-analytics
 
 Blocked by Gatsby:
 
@@ -78,9 +74,9 @@ Other:
     -   and remove tslint-npm.json
 -   Add typechecking for graphql queries: https://www.gatsbyjs.org/docs/static-query/
     \*\* do it using io-ts
+-   Improve 404, add image
+    ** link \*** import {Link} from 'gatsby';
+    \*\*\* <Link to="/" className="logo"><strong>DeveloPassion</strong></Link>
 -   Add testing: https://www.gatsbyjs.org/docs/testing/
-
-Ideas:
-
 -   add keyboard support on services page (go from one block to the next): https://www.npmjs.com/package/react-hotkeys
 -   Condense a bit (reduce top/bottom margins on desktop)
