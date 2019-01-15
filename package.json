@@ -18,6 +18,7 @@
   "dependencies": {
     "gatsby": "2.0.91",
     "gatsby-image": "2.0.26",
+    "gh-pages": "2.0.1",
     "io-ts": "1.5.2",
     "prop-types-ts": "0.6.2",
     "react": "16.7.0",
@@ -27,8 +28,6 @@
   "devDependencies": {
     "@types/react": "16.7.18",
     "@types/react-helmet": "5.0.8",
-    "gatsby-source-filesystem": "2.0.16",
-    "gatsby-transformer-sharp": "2.1.10",
     "gatsby-plugin-manifest": "2.0.13",
     "gatsby-plugin-offline": "2.0.21",
     "gatsby-plugin-react-helmet": "3.0.5",
@@ -37,6 +36,8 @@
     "gatsby-plugin-sharp": "2.0.17",
     "gatsby-plugin-stylelint": "3.0.1",
     "gatsby-plugin-ts-loader": "0.1.0",
+    "gatsby-source-filesystem": "2.0.16",
+    "gatsby-transformer-sharp": "2.1.10",
     "husky": "1.3.1",
     "lint-staged": "8.1.0",
     "node-sass": "4.11.0",
@@ -57,6 +58,7 @@
     "clean": "npm run rimraf -- node_modules .tmp .cache public dist",
     "clean:install": "yarn install",
     "preclean:install": "npm run clean",
+    "deploy": "npm run build:prod && gh-pages -d public -b gh-pages",
     "develop": "gatsby develop",
     "format": "prettier **/*.{css,js,json,md,pcss,scss,ts} --write",
     "gatsby": "gatsby",
