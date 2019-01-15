@@ -7,6 +7,8 @@ import Layout from '../components/layout';
 // tslint:disable-next-line
 import DeveloPassionWideLogo from '!svg-react-loader?name=DeveloPassionLogo!../assets/images/svg/developassion-logo.svg';
 
+import {Link} from "gatsby";
+
 export default () => (
   <Layout>
     <Helmet>
@@ -52,7 +54,7 @@ export default () => (
               <li>We think that all relationships require <strong>respect</strong>, <strong>kindness</strong> and <strong>care</strong>.</li>
             </ul>
             Finally, we believe that teams are most productive when they have <strong>fun</strong>. We keep a positive attitude, no matter what!
-          <p><a href="/services" className="button fit">Learn more...</a></p>
+          <p><Link to="/services" className="button fit">Learn more...</Link></p>
         </div>
       </section>
     </div>

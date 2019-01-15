@@ -12,7 +12,7 @@ import NonStretchedImage from "../components/non-stretched-image";
 export default ({data}:any) => (
   <Layout>
         <Helmet>
-          <title>Services</title>
+          <title>DeveloPassion Services</title>
           <meta name="description" content="Services"/>
         </Helmet>
 

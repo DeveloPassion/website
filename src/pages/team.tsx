@@ -12,8 +12,8 @@ import NonStretchedImage from "../components/non-stretched-image";
 export default ({data}:any) => (
   <Layout>
     <Helmet>
-      <title>Team</title>
-      <meta name="description" content="Team"/>
+      <title>DeveloPassion's Team</title>
+      <meta name="description" content="DeveloPassion's Team"/>
     </Helmet>
 
     <BannerGeneric className="class2" title="Team" subtitle="Meet the team..."/>

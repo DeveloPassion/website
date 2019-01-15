@@ -2,34 +2,13 @@ import * as React from 'react';
 
 // FIXME those imports MUST remain separate due to: https://github.com/AdamLeBlanc/gatsby-plugin-ts-loader/issues/1 
 import {graphql} from 'gatsby';
-import {StaticQuery} from 'gatsby';
+import {Link, StaticQuery} from 'gatsby';
 
 export default class Footer extends React.Component<any, {}> {
 
   public render() {
     return (
-      <StaticQuery query={graphql`
-  query {
-    site {
-      siteMetadata {
-        author
-        quotes
-        siteSources
-        social {
-          facebook
-          github
-          linkedIn
-          medium
-          slack
-          twitter
-          twitterSebastien
-          youtube
-        }
-        tva
-      }
-    }
-  }
-`} render={(data: any) => (
+      <StaticQuery query={query} render={(data: any) => (
         <footer className="footer">
           <div className="inner">
             <ul className="icons">
@@ -60,7 +39,7 @@ export default class Footer extends React.Component<any, {}> {
               <li><a href={data.site.siteMetadata.siteSources} className="icon alt fa-github fa-xs" target="_blank" rel="noreferrer" title="DeveloPassion's Website sources"/>
               </li>
               <li><a href={data.site.siteMetadata.social.twitterSebastien} target="_blank" rel="noreferrer" title="dSebastien @ Twitter">dSebastien</a></li>
-              <li><a href="/terms">Terms and conditions (Conditions générales)</a></li>
+              <li><Link to="/terms">Terms and conditions (Conditions générales)</Link></li>
             </ul>
           </div>
         </footer>)}/>
@@ -75,4 +54,25 @@ export default class Footer extends React.Component<any, {}> {
   }
 }
 
-        
+const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        author
+        quotes
+        siteSources
+        social {
+          facebook
+          github
+          linkedIn
+          medium
+          slack
+          twitter
+          twitterSebastien
+          youtube
+        }
+        tva
+      }
+    }
+  }
+`;

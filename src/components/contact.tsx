@@ -11,24 +11,7 @@ export default class Contact extends React.Component<any, {}> {
 
   public render() {
     return (
-      <StaticQuery query={graphql`
-        query {
-          site {
-            siteMetadata {
-              contact {
-                mail
-                phone
-                phoneRaw
-              }
-              address {
-                postalCode
-                city
-                country
-              }
-            }
-          }
-        }
-`} render={(data: any) => (
+      <StaticQuery query={query} render={(data: any) => (
         <section id="contact" className="contact">
           <div className="inner">
             <section className="contact-logo">
@@ -67,3 +50,22 @@ export default class Contact extends React.Component<any, {}> {
     )
   }
 }
+
+const query = graphql`
+        query {
+          site {
+            siteMetadata {
+              contact {
+                mail
+                phone
+                phoneRaw
+              }
+              address {
+                postalCode
+                city
+                country
+              }
+            }
+          }
+        }
+`;
