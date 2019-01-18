@@ -4,11 +4,15 @@ This is the code behind DeveloPassion's official Website: https://www.developass
 
 ## Build
 
--   run yarn install
+-   execute `yarn install`
 -   execute `npm run build` to run the development version locally
 -   execute `npm run build:prod` to build the production version (put under public/)
 
 GraphiQL: http://localhost:8000/___graphql
+
+## Publish
+
+-  execute `npm run deploy`
 
 ## Metadata
 
@@ -38,6 +42,7 @@ SVGs:
 
 ## TODO
 
+-   Remove path prefix once domain available: package.json deploy script, gatsby-config.js
 -   i18n
     ** https://www.npmjs.com/package/gatsby-plugin-i18n
     ** https://www.npmjs.com/package/react-intl

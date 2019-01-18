@@ -4,6 +4,9 @@ const path = require("path");
 const siteMetadata = require("./metadata");
 
 module.exports = {
+  // FIXME remove path prefix once domain is available
+  pathPrefix: '/website',
+  
 	siteMetadata,
 	plugins: [
 		// reference: https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet
