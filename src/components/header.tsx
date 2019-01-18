@@ -1,27 +1,33 @@
 import * as React from 'react';
 
+import {createPropsGetter, DefaultProps} from "@martin_hotell/rex-tils";
+import {defaultMenuProps} from "./menu";
+
 import {Link} from 'gatsby';
-import * as t from 'io-ts';
-import {props} from 'prop-types-ts';
 
-// runtime types
-// ref: https://github.com/gcanti/prop-types-ts
-export const HeaderRuntimeProps = t.interface({
-  onToggleMenu: t.any // FIXME define type
-}, 'HeaderRuntimeProps');
+export type HeaderProps = {
+  onToggleMenu: () => void
+} & DefaultProps<typeof defaultHeaderProps>
 
-// extract the static type
-export type HeaderProps = t.TypeOf<typeof HeaderRuntimeProps>
+export const defaultHeaderProps = DefaultProps({
+});
 
-@props(HeaderRuntimeProps)
+const getProps = createPropsGetter(defaultMenuProps);
+
 export default class Header extends React.Component<HeaderProps, {}> {
 
+  public static readonly defaultProps = defaultHeaderProps;
+  
   public render() {
+    const {
+      onToggleMenu: toggleMenu
+    } = getProps(this.props);
+    
     return (
       <header className="header alt">
         <Link to="/" className="logo"><strong><span className="logoHome icon fa-icon fa-home" />DeveloPassion</strong></Link>
         <nav>
-          <a className="menu-link" onClick={this.props.onToggleMenu} href="javascript:">Menu</a>
+          <a className="menu-link" onClick={toggleMenu} href="javascript:">Menu</a>
         </nav>
       </header>
     );

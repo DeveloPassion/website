@@ -1,30 +1,38 @@
 import * as React from 'react';
 
-import * as t from 'io-ts';
-import {props} from 'prop-types-ts';
+import {createPropsGetter, DefaultProps} from "@martin_hotell/rex-tils";
 
-// runtime types
-// ref: https://github.com/gcanti/prop-types-ts
-export const BannerGenericRuntimeProps = t.interface({
-  className: t.string,
-  subtitle: t.string,
-  title: t.string,
-}, 'BannerGenericRuntimeProps');
+export type BannerProps = {
+  className: string,
+  subtitle: string,
+  title: string,
+} & DefaultProps<typeof defaultBannerProps>
 
-// extract the static type
-export type BannerGenericProps = t.TypeOf<typeof BannerGenericRuntimeProps>
+export const defaultBannerProps = DefaultProps({
+});
 
-@props(BannerGenericRuntimeProps)
-export default class BannerGeneric extends React.Component<BannerGenericProps, {}> {
+const getProps = createPropsGetter(defaultBannerProps);
+
+export default class BannerGeneric extends React.Component<BannerProps, {}> {
+
+  public static readonly defaultProps = defaultBannerProps;
+  
   public render() {
+
+    const {
+      className,
+      title,
+      subtitle
+    } = getProps(this.props);
+    
     return (
-      <section className={`banner ${this.props.className}`}>
+      <section className={`banner ${className}`}>
         <div className="inner">
           <header className="major">
-            <h1>{this.props.title}</h1>
+            <h1>{title}</h1>
           </header>
           <div className="content">
-            <p>{this.props.subtitle}</p>
+            <p>{subtitle}</p>
           </div>
         </div>
       </section>

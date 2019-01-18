@@ -1,31 +1,36 @@
 import * as React from 'react';
 
+import {createPropsGetter, DefaultProps} from "@martin_hotell/rex-tils";
+
 import {Link} from 'gatsby';
 
-import * as t from 'io-ts';
-import {props} from 'prop-types-ts';
+export type MenuProps = {
+  onToggleMenu: () => void
+} & DefaultProps<typeof defaultMenuProps>
 
-// runtime types
-export const MenuRuntimeProps = t.interface({
-  onToggleMenu: t.any // FIXME define type
-}, 'MenuRuntimeProps');
+export const defaultMenuProps = DefaultProps({
+});
 
-// extract the static type
-export type MenuProps = t.TypeOf<typeof MenuRuntimeProps>
+const getProps = createPropsGetter(defaultMenuProps);
 
-@props(MenuRuntimeProps)
 export default class Menu extends React.Component<MenuProps, {}> {
 
+  public static readonly defaultProps = defaultMenuProps;
+
   public render() {
+    const {
+      onToggleMenu: toggleMenu
+    } = getProps(this.props);
+    
     return (
       <nav className="menu">
         <div className="inner">
           <ul className="links">
-            <li><Link onClick={this.props.onToggleMenu} to="/">Home</Link></li>
-            <li><Link onClick={this.props.onToggleMenu} to="/news">News</Link></li>
-            <li><Link onClick={this.props.onToggleMenu} to="/services">Services</Link></li>
-            <li><Link onClick={this.props.onToggleMenu} to="/about">About</Link></li>
-            <li><Link onClick={this.props.onToggleMenu} to="/team">Team</Link></li>
+            <li><Link onClick={toggleMenu} to="/">Home</Link></li>
+            <li><Link onClick={toggleMenu} to="/news">News</Link></li>
+            <li><Link onClick={toggleMenu} to="/services">Services</Link></li>
+            <li><Link onClick={toggleMenu} to="/about">About</Link></li>
+            <li><Link onClick={toggleMenu} to="/team">Team</Link></li>
           </ul>
           <ul className="actions vertical">
             {/*
