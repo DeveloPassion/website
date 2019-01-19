@@ -1,7 +1,7 @@
 "use strict";
 
 const path = require("path");
-const siteMetadata = require("./metadata");
+const siteMetadata = require("./src/metadata.json");
 
 module.exports = {
   // FIXME remove path prefix once domain is available
