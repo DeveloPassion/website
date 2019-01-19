@@ -13,6 +13,7 @@ import Layout from '../components/layout';
 import {backgroundImage} from "../utils/images";
 
 export default ({data}:any) => {
+  // tslint:disable-next-line:no-console
   console.log(`
 ______                   _        ______                 _               
 |  _  \\                 | |       | ___ \\               (_)              
