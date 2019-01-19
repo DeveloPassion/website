@@ -9,7 +9,8 @@
   "author": "Sébastien Dubois",
   "description": "DeveloPassion Website",
   "contact": {
-    "mail": "contact@developassion.be",
+    "mail": "contact",
+    "mailDomain": "developassion.be",
     "phone": "+32 478 40 29 93",
     "phoneRaw": "+32478402993"
   },

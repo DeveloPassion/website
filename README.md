@@ -43,6 +43,11 @@ SVGs:
 ## TODO
 
 -   Remove path prefix once domain available: package.json deploy script, gatsby-config.js
+-   Find solution for the Loading (StaticQuery) issue when using StaticQuery for contact and footer pages
+    * https://github.com/gatsbyjs/gatsby/issues/6350
+    * https://github.com/gatsbyjs/gatsby/issues/5473
+    * https://github.com/gatsbyjs/gatsby/issues/10098
+    * https://github.com/gatsbyjs/gatsby/issues/10016
 -   i18n
     ** https://www.npmjs.com/package/gatsby-plugin-i18n
     ** https://www.npmjs.com/package/react-intl
