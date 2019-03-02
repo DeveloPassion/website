@@ -19,7 +19,7 @@ export default class Contact extends React.Component<any, {}> {
               <div className="contact-method">
                 <span className="icon alt fa-envelope"/>
                 <h3>Email</h3>
-                <span>{metadata.contact.mail}<i className="icon fa fa-at"/>{metadata.contact.mailDomain}</span>
+                <span>{metadata.contact.mail}<i className="fa fa-at"/>{metadata.contact.mailDomain}</span>
               </div>
             </section>
             <section className="contact-method-wrapper">

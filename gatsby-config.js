@@ -4,8 +4,8 @@ const path = require("path");
 const siteMetadata = require("./src/metadata.json");
 
 module.exports = {
-  // FIXME remove path prefix once domain is available
-  pathPrefix: '/website',
+  // No path prefix needed with the domain
+  //pathPrefix: '',
   
 	siteMetadata,
 	plugins: [

@@ -13,6 +13,8 @@ GraphiQL: http://localhost:8000/___graphql
 ## Publish
 
 -  execute `npm run deploy`
+- git tag <version>
+- git push --tags
 
 ## Metadata
 
@@ -42,12 +44,7 @@ SVGs:
 
 ## TODO
 
--   Remove path prefix once domain available: package.json deploy script, gatsby-config.js
--   Find solution for the Loading (StaticQuery) issue when using StaticQuery for contact and footer pages
-    * https://github.com/gatsbyjs/gatsby/issues/6350
-    * https://github.com/gatsbyjs/gatsby/issues/5473
-    * https://github.com/gatsbyjs/gatsby/issues/10098
-    * https://github.com/gatsbyjs/gatsby/issues/10016
+-   Google analytics: gatsby-plugin-google-analytics
 -   i18n
     ** https://www.npmjs.com/package/gatsby-plugin-i18n
     ** https://www.npmjs.com/package/react-intl
@@ -57,21 +54,9 @@ SVGs:
     \*\* inspiration: https://github.com/scttcper/gatsby-casper (reading time, tag page, subscribe, author page)
     \*\* https://www.npmjs.com/package/gatsby-remark-responsive-iframe
 -   GDPR and privacy policy
-
-Blocked by domain acquisition:
-
--   Enable GH pages: https://github.com/DeveloPassion/website/settings
--   Create GH pages branch
--   Build: push public/ to GH pages branch
--   Sec headers (CloudFlare)
--   Google analytics: gatsby-plugin-google-analytics
-
-Blocked by Gatsby:
-
 -   CSP: https://github.com/gatsbyjs/gatsby/issues/10890
--   PWA
-    ** https://www.gatsbyjs.org/docs/add-offline-support-with-a-service-worker/
-    ** https://github.com/gatsbyjs/gatsby/issues/10036
+  * https://github.com/bejamas/gatsby-plugin-csp
+-   PWA: https://www.gatsbyjs.org/docs/add-offline-support-with-a-service-worker/
 
 Other:
 
