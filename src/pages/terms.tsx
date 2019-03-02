@@ -19,18 +19,15 @@ export default ({data}: any) => (
           <header className="major">
             <h1>Terms and conditions (Conditions générales)</h1>
           </header>
-          <p>
-            <ul>
-              <li>Version: {data.site.siteMetadata.terms.version}</li>
-              <li>Last update: {data.site.siteMetadata.terms.lastUpdate}</li>
-            </ul>
+          <ul>
+            <li>Version: {data.site.siteMetadata.terms.version}</li>
+            <li>Last update: {data.site.siteMetadata.terms.lastUpdate}</li>
+          </ul>
 
-            <a href={data.site.siteMetadata.terms.fr}>Télécharger les conditions générales</a>
-          </p>
+          <a href={data.site.siteMetadata.terms.fr}>Télécharger les conditions générales</a>
         </div>
       </section>
     </div>
-
   </Layout>
 );
 
