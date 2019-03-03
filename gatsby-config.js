@@ -148,7 +148,7 @@ module.exports = {
         }
       }
     },
-    
+
     // reference: https://www.gatsbyjs.org/packages/gatsby-plugin-netlify/
     {
       resolve: `gatsby-plugin-netlify`,
@@ -160,15 +160,15 @@ module.exports = {
             "Content-Security-Policy: __REPLACE_ME__",
             "Access-Control-Allow-Origin: null",
             //"Clear-Site-Data: *" // useful for logout pages: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Clear-Site-Data
-            
+
             // reference: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy
             // Not yet ready for prime time
             //"Feature-Policy: autoplay: 'none'; camera: 'none'; document-domain: 'none'; encrypted-media: 'none'; fullscreen: 'self'; geolocation: 'none'; microphone: 'none'; midi: 'none'; payment: 'none'; vr: 'none'",
-            "Referrer-Policy: origin",
+            "Referrer-Policy: strict-origin",
             "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload",
             "Upgrade-Insecure-Requests: 1",
             "X-Content-Type-Options: nosniff",
-            "X-Frame-Options: deny",
+            "X-Frame-Options: DENY",
             "X-XSS-Protection: 1; mode=block",
           ],
         }, // option to add more headers. `Link` headers are transformed by the below criteria

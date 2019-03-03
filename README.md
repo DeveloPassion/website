@@ -54,10 +54,6 @@ SVGs:
   * https://www.npmjs.com/package/gatsby-remark-responsive-iframe
 * GDPR and privacy policy
 * PWA: https://www.gatsbyjs.org/docs/add-offline-support-with-a-service-worker/
-* CSP: remove unsafe-inline on styles
-
-Other:
-
 * Continue Lighthouse audit: https://developers.google.com/web/tools/lighthouse/
 * Check pagespeed: https://developers.google.com/speed/pagespeed/insights/
 * Check structured data: https://search.google.com/structured-data/testing-tool/u/0/
@@ -72,5 +68,6 @@ Other:
 * Add "tslint-sonarts", to tslint.json once this is fixed: https://github.com/AdamLeBlanc/gatsby-plugin-ts-loader/issues/2
   * and adapt package.json tslint script
   * and remove tslint-npm.json
-* add keyboard support on services page (go from one block to the next): https://www.npmjs.com/package/react-hotkeys
+* add keyboard support on services page (go from one block to the next): https://www.npmjs.com/package/react-hotkeys)
 * Condense a bit (reduce top/bottom margins on desktop)
+* CSP: remove unsafe-inline on styles
