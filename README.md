@@ -12,9 +12,11 @@ GraphiQL: http://localhost:8000/___graphql
 
 ## Publish
 
-* execute `npm run deploy`
 * `git tag <version>`
 * `git push --tags`
+* Netlify: `git push` ;-)
+* Old way: Github pages
+  * execute `npm run deploy`
 
 ## Metadata
 
@@ -44,7 +46,6 @@ SVGs:
 
 ## TODO
 
-* Google analytics: gatsby-plugin-google-analytics
 * i18n: https://www.npmjs.com/package/gatsby-plugin-i18n
   * https://www.npmjs.com/package/react-intl
 * Add news support
