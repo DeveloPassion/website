@@ -19,7 +19,7 @@
     "@martin_hotell/rex-tils": "2.1.1",
     "gatsby": "2.1.19",
     "gatsby-image": "2.0.30",
-    "gatsby-plugin-csp": "^1.0.1",
+    "gatsby-plugin-csp": "1.0.1",
     "gh-pages": "2.0.1",
     "io-ts": "1.8.2",
     "react": "16.8.3",

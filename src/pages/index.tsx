@@ -37,6 +37,8 @@ Because passion makes all the difference.
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="canonical" href="https://www.developassion.be/robots.txt"/>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script" />
       </Helmet>
 
       <Banner/>

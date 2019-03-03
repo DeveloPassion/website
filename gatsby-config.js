@@ -141,8 +141,8 @@ module.exports = {
           "plugin-types": "application/pdf",
           "prefetch-src": "'self'",
           "sandbox": "",
-          "script-src": "'self' www.google-analytics.com 'sha256-srzUm2bR52Dg2g2SqWiGuo719+FqQulMWAYRYJ8hkhc='",
-          "style-src": "'self' blob: https://fonts.googleapis.com/ 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' 'sha256-xNmAGiX5+l4RxSNOw0EGsrj4PVanUJKY1fM6zgr2tVQ=' 'sha256-cdvzEdbij583TiVZYWYPKp5BUAZ3CyJHRj2L0mCBcBs='",
+          "script-src": "'self' www.google-analytics.com",
+          "style-src": "'self' blob: https://fonts.googleapis.com",
           "upgrade-insecure-requests": "",
           "worker-src": "'self'",
         }
