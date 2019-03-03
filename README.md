@@ -54,6 +54,7 @@ SVGs:
   * https://www.npmjs.com/package/gatsby-remark-responsive-iframe
 * GDPR and privacy policy
 * PWA: https://www.gatsbyjs.org/docs/add-offline-support-with-a-service-worker/
+* CSP: remove unsafe-inline on styles
 
 Other:
 

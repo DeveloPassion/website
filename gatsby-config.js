@@ -117,8 +117,8 @@ module.exports = {
       options: {
         disableOnDev: false,
         mergeScriptHashes: true,
-        mergeStyleHashes: true,
-        mergeDefaultDirectives: true,
+        mergeStyleHashes: false,
+        mergeDefaultDirectives: false,
         // references:
         // https://content-security-policy.com/
         // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy
@@ -142,7 +142,7 @@ module.exports = {
           "prefetch-src": "'self'",
           "sandbox": "",
           "script-src": "'self' www.google-analytics.com",
-          "style-src": "'self' blob: https://fonts.googleapis.com",
+          "style-src": "'self' 'unsafe-inline' blob: https://fonts.googleapis.com",
           "upgrade-insecure-requests": "",
           "worker-src": "'self'",
         }
@@ -159,7 +159,8 @@ module.exports = {
             //"Clear-Site-Data: *" // useful for logout pages: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Clear-Site-Data
             
             // reference: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy
-            "Feature-Policy: autoplay: 'none'; camera: 'none'; document-domain: 'none'; encrypted-media: 'none'; fullscreen: 'self'; geolocation: 'none'; microphone: 'none'; midi: 'none'; payment: 'none'; vr: 'none'",
+            // Not yet ready for prime time
+            //"Feature-Policy: autoplay: 'none'; camera: 'none'; document-domain: 'none'; encrypted-media: 'none'; fullscreen: 'self'; geolocation: 'none'; microphone: 'none'; midi: 'none'; payment: 'none'; vr: 'none'",
             "Referrer-Policy: origin",
             "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload",
             "Upgrade-Insecure-Requests: 1",
