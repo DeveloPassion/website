@@ -51,7 +51,7 @@ Because passion makes all the difference.
               <h3>About DeveloPassion</h3>
               <p>Learn more about our company.</p>
             </header>
-            <Link to="/about" className="link primary" title="About" />
+            <Link to="/about" className="link primary" title="About" aria-label="About" />
           </article>
           <article>
             <NonStretchedImage fluid={data.imageServices.childImageSharp.fluid} style={backgroundImage} />
@@ -59,7 +59,7 @@ Because passion makes all the difference.
               <h3>Services</h3>
               <p>Discover our services.</p>
             </header>
-            <Link to="/services" className="link primary" title="Services" />
+            <Link to="/services" className="link primary" title="Services" aria-label="Services" />
           </article>
           <article>
             <NonStretchedImage fluid={data.imageTeam.childImageSharp.fluid} style={backgroundImage} />
@@ -67,7 +67,7 @@ Because passion makes all the difference.
               <h3>Team</h3>
               <p>Meet our team.</p>
             </header>
-            <Link to="/team" className="link primary" title="Team" />
+            <Link to="/team" className="link primary" title="Team" aria-label="Team" />
           </article>
           <article>
             <NonStretchedImage fluid={data.imageNews.childImageSharp.fluid} style={backgroundImage} />
@@ -76,7 +76,7 @@ Because passion makes all the difference.
               <p>Discover what we've been up to recently!</p>
             </header>
 
-            <Link to="/news" className="link primary" title="News" />
+            <Link to="/news" className="link primary" title="News" aria-label="News" />
           </article>
         </section>
         {/*
@@ -87,7 +87,7 @@ Because passion makes all the difference.
           </header>
           
           <ul className="actions">
-            <li><Link to="/news" className="button next" title="News">Go!</Link></li>
+            <li><Link to="/news" className="button next" title="News" aria-label="News">Go!</Link></li>
           </ul>
         </div>
       </section>

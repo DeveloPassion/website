@@ -34,7 +34,7 @@ export default () => (
             <li>Agile project and team management</li>
           </ul>
 
-          <p>If you are looking for passionate partners to assist you, then look no further and <a href="#contact">get
+          <p>If you are looking for passionate partners to assist you, then look no further and <a href="#contact" aria-label="Contact DeveloPassion">get
             in touch with us!</a></p>
 
           <h2>Our company values</h2>
@@ -54,7 +54,7 @@ export default () => (
               <li>We think that all relationships require <strong>respect</strong>, <strong>kindness</strong> and <strong>care</strong>.</li>
             </ul>
             Finally, we believe that teams are most productive when they have <strong>fun</strong>. We keep a positive attitude, no matter what!
-          <p><Link to="/services" className="button fit">Learn more...</Link></p>
+          <p><Link to="/services" className="button fit" aria-label="Services">Learn more...</Link></p>
         </div>
       </section>
     </div>

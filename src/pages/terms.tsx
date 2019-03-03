@@ -24,7 +24,7 @@ export default ({data}: any) => (
             <li>Last update: {data.site.siteMetadata.terms.lastUpdate}</li>
           </ul>
 
-          <a href={data.site.siteMetadata.terms.fr}>Télécharger les conditions générales</a>
+          <a href={data.site.siteMetadata.terms.fr} aria-label="Télécharger les conditions générales">Télécharger les conditions générales</a>
         </div>
       </section>
     </div>

@@ -32,9 +32,9 @@ export default ({data}:any) => (
                 Whether you need assistance for a mission-critical back-end system, a complex front-end Web application, a mobile application or a
                 Website for your brand, we can help you get the competitive edge that you need.
               </p>
-              <p>If you are looking for passionate partners to assist you, then look no further and <a href="#contact">get
+              <p>If you are looking for passionate partners to assist you, then look no further and <a href="#contact" aria-label="Get in touch with us!">get
                 in touch with us!</a></p>
-              <p><a href="#services-software-development" className="button fit">Learn more...</a></p>
+              <p><a href="#services-software-development" className="button fit" aria-label="Learn more">Learn more...</a></p>
             </div>
           </section>
 
@@ -109,7 +109,7 @@ export default ({data}:any) => (
                   <header className="major">
                     <h3>Agile project and team management</h3>
                   </header>
-                  <p>We have a <strong>solid experience in team organization and team management</strong>. We <strong>love</strong> building hyper-productive groups while creating a <strong>positive</strong>, <strong>motivating</strong> and <strong>fun</strong> work environment.<br />We are agilists, and, as such, we fully adhere to the <a href="https://agilemanifesto.org/" title="Agile manifesto">agile manifesto</a>. We also share the ideas of the <strong><a href="https://twitter.com/hashtag/NoEstimates">#NoEstimates</a></strong> movement. Instead of playing with numbers, we prefer to <strong>focus on delivering quality products iteratively</strong>, always focusing on delivering the most value.</p>
+                  <p>We have a <strong>solid experience in team organization and team management</strong>. We <strong>love</strong> building hyper-productive groups while creating a <strong>positive</strong>, <strong>motivating</strong> and <strong>fun</strong> work environment.<br />We are agilists, and, as such, we fully adhere to the <a href="https://agilemanifesto.org/" title="Agile manifesto" aria-label="Agile manifesto">agile manifesto</a>. We also share the ideas of the <strong><a href="https://twitter.com/hashtag/NoEstimates">#NoEstimates</a></strong> movement. Instead of playing with numbers, we prefer to <strong>focus on delivering quality products iteratively</strong>, always focusing on delivering the most value.</p>
                 </div>
               </div>
             </section>

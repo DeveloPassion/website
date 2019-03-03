@@ -61,7 +61,7 @@ SVGs:
 * Add GreenKeeper
 * Improve 404, add image
   * link \*** import {Link} from 'gatsby';
-  * <Link to="/" className="logo"><strong>DeveloPassion</strong></Link>
+  * <Link to="/" className="logo" aria-label="DeveloPassion company logo"><strong>DeveloPassion</strong></Link>
 * SEO: https://www.gatsbyjs.org/docs/add-seo-component/
 * Add testing: https://www.gatsbyjs.org/docs/testing/
 * Add typechecking for graphql queries: https://www.gatsbyjs.org/docs/static-query/

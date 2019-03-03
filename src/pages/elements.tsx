@@ -58,7 +58,7 @@ const Elements = () => (
                                 <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
                                 This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
                                 This is <u>underlined</u> and this is code: <code>for (;;)</code>.
-                                Finally, this is a <a href="#">link</a>.</p>
+                                Finally, this is a <a href="#" aria-label="link">link</a>.</p>
                                 <hr />
                                 <h2>Heading Level 2</h2>
                                 <h3>Heading Level 3</h3>
@@ -295,16 +295,16 @@ const Elements = () => (
                                     <li><a href="#" className="button special small">Small</a></li>
                                 </ul>
                                 <ul className="actions fit">
-                                    <li><a href="#" className="button special fit">Fit</a></li>
-                                    <li><a href="#" className="button fit">Fit</a></li>
+                                    <li><a href="#" className="button special fit" aria-label="Fit">Fit</a></li>
+                                    <li><a href="#" className="button fit" aria-label="Fit">Fit</a></li>
                                 </ul>
                                 <ul className="actions fit small">
-                                    <li><a href="#" className="button special fit small">Fit + Small</a></li>
-                                    <li><a href="#" className="button fit small">Fit + Small</a></li>
+                                    <li><a href="#" className="button special fit small" aria-label="Fit + Small">Fit + Small</a></li>
+                                    <li><a href="#" className="button fit small" aria-label="Fit + Small">Fit + Small</a></li>
                                 </ul>
                                 <ul className="actions">
-                                    <li><a href="#" className="button special icon fa-search">Icon</a></li>
-                                    <li><a href="#" className="button icon fa-download">Icon</a></li>
+                                    <li><a href="#" className="button special icon fa-search" aria-label="Icon">Icon</a></li>
+                                    <li><a href="#" className="button icon fa-download" aria-label="Icon">Icon</a></li>
                                 </ul>
                                 <ul className="actions">
                                     <li><span className="button special disabled">Special</span></li>

@@ -21,9 +21,9 @@ export default ({data}:any) => (
     <div className="main team">
       <section id="one">
         <div className="inner">
-          <p>If you are looking for passionate partners to assist you, then look no further and <a href="#contact">get
+          <p>If you are looking for passionate partners to assist you, then look no further and <a href="#contact" aria-label="Get in touch with us!">get
             in touch with us!</a></p>
-          <p><a href="#team-sebastien-dubois" className="button fit">Learn more...</a></p>
+          <p><a href="#team-sebastien-dubois" className="button fit" aria-label="Learn more...">Learn more...</a></p>
         </div>
       </section>
 
@@ -50,16 +50,16 @@ export default ({data}:any) => (
               </p>
               <ul className="icons">
                 <li><a href={data.site.siteMetadata.social.linkedInSebastien}
-                       className="icon fa-linkedin" target="_blank" rel="noreferrer" title="Sebastien @ LinkedIn"><span
+                       className="icon fa-linkedin" target="_blank" rel="noreferrer" title="Sebastien @ LinkedIn" aria-label="Sebastien @ LinkedIn"><span
                   className="label">LinkedIn</span></a></li>
                 <li><a href={data.site.siteMetadata.social.twitterSebastien}
-                   className="icon fa-twitter fa-xs" target="_blank" rel="noreferrer" title="Sebastien @ Twitter"><span
+                   className="icon fa-twitter fa-xs" target="_blank" rel="noreferrer" title="Sebastien @ Twitter" aria-label="Sebastien @ Twitter"><span
                   className="label">Twitter</span></a></li>
                 <li><a href={data.site.siteMetadata.social.githubSebastien}
-                       className="icon fa-github" target="_blank" rel="noreferrer" title="Sebastien @ Github"><span
+                       className="icon fa-github" target="_blank" rel="noreferrer" title="Sebastien @ Github" aria-label="Sebastien @ Github"><span
                   className="label">GitHub</span></a></li>
                 <li><a href={data.site.siteMetadata.social.mediumSebastien}
-                       className="icon fa-medium" target="_blank" rel="noreferrer" title="Sebastien @ Medium"><span
+                       className="icon fa-medium" target="_blank" rel="noreferrer" title="Sebastien @ Medium" aria-label="Sebastien @ Medium"><span
                   className="label">Medium</span></a></li>
               </ul>
             </div>

@@ -12,7 +12,7 @@ export default () => (
                 <h1>Page not found :(</h1>
                 <p>The page you were looking for could not be found, sorry!</p>
               <p>Why don't you go back?</p>
-              <p><Link to="/" className="button fit">HOME</Link></p>
+              <p><Link to="/" className="button fit" aria-label="Home">HOME</Link></p>
             </div>
         </section>
     </div>

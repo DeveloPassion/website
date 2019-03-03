@@ -9,7 +9,7 @@ const Banner = () => (
             <div className="content">
                 <p>This is the official Website of DeveloPassion.</p>
                 <ul className="actions">
-                    <li><a href="#one" className="button next scrolly">How can we help?</a></li>
+                    <li><a href="#one" className="button next scrolly" aria-label="How can we help?">How can we help?</a></li>
                 </ul>
             </div>
         </div>
