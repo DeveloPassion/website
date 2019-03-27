@@ -141,7 +141,7 @@ module.exports = {
           "plugin-types": "application/pdf",
           "prefetch-src": "'self'",
           "sandbox": "",
-          "script-src": "'self' www.google-analytics.com",
+          "script-src": "'self' 'sha256-MLiR00cJ/U9q9xNWjl7pTPbfp1DY/NFwG571Qjo4HzU=' www.google-analytics.com",
           "style-src": "'self' 'unsafe-inline' blob: https://fonts.googleapis.com",
           "upgrade-insecure-requests": "",
           "worker-src": "'self'",

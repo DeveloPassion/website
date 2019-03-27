@@ -27,7 +27,7 @@ export default ({data}:any) => (
         </div>
       </section>
 
-      <section id="team-sebastien-dubois" className="spotlights">
+      <section id="sebastien-dubois" className="spotlights">
         <section>
               <span className="image">
                 <NonStretchedImage fluid={data.photoSebastien.childImageSharp.fluid} alt="Sébastien Dubois" />
