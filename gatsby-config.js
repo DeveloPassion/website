@@ -141,7 +141,7 @@ module.exports = {
           "plugin-types": "application/pdf",
           "prefetch-src": "'self'",
           "sandbox": "",
-          "script-src": "'self' 'sha256-MLiR00cJ/U9q9xNWjl7pTPbfp1DY/NFwG571Qjo4HzU=' www.google-analytics.com",
+          "script-src": "'self' 'sha256-MLiR00cJ/U9q9xNWjl7pTPbfp1DY/NFwG571Qjo4HzU=' 'sha256-M7eH8uyIamoQX41o/nfyBbL5gS53rT2yhbIhzS8UayI=' 'sha256-sKe2FCIc3AyLo/ZJkMRVf0qBFQ8Rh0H24auitPtvvX8=' 'sha256-TiqudZhIIX4wXaC+sq2d4CAjCE1N1AqO9q0uUVNGe6o=' 'sha256-P62ls9cATjeXxt5dx0if5hJO016NoTOdk8LT6bKORy8=' www.google-analytics.com",
           "style-src": "'self' 'unsafe-inline' blob: https://fonts.googleapis.com",
           "upgrade-insecure-requests": "",
           "worker-src": "'self'",
