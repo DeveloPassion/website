@@ -137,7 +137,7 @@ module.exports = {
           "img-src": "'self' data: www.google-analytics.com",
           "manifest-src": "'self'",
           "media-src": "'self'",
-          "object-src": "'none'",
+          "object-src": "'self'",
           "plugin-types": "application/pdf",
           "prefetch-src": "'self'",
           "sandbox": "",
