@@ -28,6 +28,9 @@ export default class Footer extends React.Component<any, {}> {
                      target="_blank" rel="noreferrer" title="DeveloPassion @ Slack" aria-label="DeveloPassion @ Slack"><span className="label">Slack</span></a></li>
               <li><a href={metadata.social.youtube} className="icon alt fa-youtube"
                      target="_blank" rel="noreferrer" title="DeveloPassion @ YouTube" aria-label="DeveloPassion @ YouTube"><span className="label">YouTube</span></a></li>
+              <li><a href={metadata.social.newsletter} className="icon alt fa-newspaper-o"
+                     target="_blank" rel="noreferrer" title="DeveloPassion @ YouTube" aria-label="DeveloPassion @ YouTube"><span className="label">YouTube</span></a></li>
+              
               <li className="quote"><br/>
                 <blockquote>{this.getRandomElement(metadata.quotes)}</blockquote>
               </li>
