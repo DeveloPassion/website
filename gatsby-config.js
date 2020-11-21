@@ -161,15 +161,17 @@ module.exports = {
             //"Access-Control-Allow-Origin: null",
             //"Clear-Site-Data: *" // useful for logout pages: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Clear-Site-Data
 
-            // reference: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy
-            // Not yet ready for prime time
-            //"Feature-Policy: autoplay: 'none'; camera: 'none'; document-domain: 'none'; encrypted-media: 'none'; fullscreen: 'self'; geolocation: 'none'; microphone: 'none'; midi: 'none'; payment: 'none'; vr: 'none'",
+            // reference: https://scotthelme.co.uk/goodbye-feature-policy-and-hello-permissions-policy/
+            "Permissions-Policy: accelerometer=(), camera=(), fullscreen=(self), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(self), usb=()",
             "Referrer-Policy: strict-origin",
             "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload",
             "Upgrade-Insecure-Requests: 1",
             "X-Content-Type-Options: nosniff",
+            "X-DNS-Prefetch-Control: on",
+            "X-Download-Options: noopen",
             "X-Frame-Options: DENY",
-            "X-XSS-Protection: 1; mode=block",
+            "X-Permitted-Cross-Domain-Policies: none",
+            "X-XSS-Protection: 0",
           ],
         }, // option to add more headers. `Link` headers are transformed by the below criteria
         allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria
