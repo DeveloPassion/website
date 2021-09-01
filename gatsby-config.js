@@ -131,7 +131,7 @@ module.exports = {
 					"object-src": "'self' data:",
 					"prefetch-src": "'self'",
 					"sandbox": "",
-					"script-src": "'self' https://plausible.io",
+					"script-src": "'self' https://plausible.io 'sha256-9EfSE/pxhsIRQAZ9nHpzZGKeEticJtki6BUxpyJY/VQ='",
 					"style-src": "'self' 'unsafe-inline' blob: https://fonts.googleapis.com",
 					"upgrade-insecure-requests": "",
 					"worker-src": "'self'",
