@@ -34,14 +34,6 @@ module.exports = {
 		// TODO enable later when this is fixed: https://github.com/gatsbyjs/gatsby/issues/10036
 		//'gatsby-plugin-offline',
 
-		// reference: https://www.gatsbyjs.org/packages/gatsby-plugin-ts-loader/
-		{
-			resolve: "gatsby-plugin-ts-loader",
-			options: {
-				tslint: true, // false or exclude to disable tslint
-			},
-		},
-
 		{
 			resolve: "gatsby-plugin-stylelint",
 			options: {
@@ -104,10 +96,8 @@ module.exports = {
           }
  
           allSitePage {
-            edges {
-              node {
-                path
-              }
+            nodes {
+              path
             }
           }
       }`,
