@@ -1,13 +1,9 @@
 import * as React from 'react';
-
-import Helmet from 'react-helmet';
-
+import { Helmet } from 'react-helmet';
 import {graphql} from "gatsby";
-
 import BannerGeneric from '../components/banner-generic';
 import Layout from '../components/layout';
-
-import NonStretchedImage from "../components/non-stretched-image";
+import {StaticImage} from "gatsby-plugin-image";
 
 export default ({data}:any) => (
   <Layout>
@@ -30,14 +26,14 @@ export default ({data}:any) => (
       <section id="sebastien-dubois" className="spotlights">
         <section>
               <span className="image">
-                <NonStretchedImage fluid={data.photoSebastien.childImageSharp.fluid} alt="Sébastien Dubois" />
+                <StaticImage src="../assets/images/sebastien.png" alt="Sébastien Dubois" />
               </span>
           <div className="content">
             <div className="inner">
               <header className="major">
                 <h3>Sébastien Dubois - <strong>Founder</strong></h3>
               </header>
-              <span>Favourite quote (knowing that he has two children):</span>
+              <span>Favourite quote (knowing that he has three children):</span>
               <blockquote>Patience is a virtue.</blockquote>
               <p>
                 Sébastien is a <strong>passionate</strong> software <strong>craftsman</strong> and <strong>open source contributor</strong> with many years of experience as <strong>senior full-stack developer</strong>, <strong>software architect</strong> and technical <strong>team leader</strong>.
@@ -70,24 +66,16 @@ export default ({data}:any) => (
   </Layout>
 );
 
-export const query = graphql`
-  query {
-    site {
-      siteMetadata {
-        social {
-          githubSebastien
-          linkedInSebastien
-          mediumSebastien
-          twitterSebastien
-        }
-      }
-    }
-    photoSebastien:file(relativePath: { eq: "team/sebastien.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 2645) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
+export const query = graphql`{
+  site {
+    siteMetadata {
+      social {
+        githubSebastien
+        linkedInSebastien
+        mediumSebastien
+        twitterSebastien
       }
     }
   }
+}
 `;

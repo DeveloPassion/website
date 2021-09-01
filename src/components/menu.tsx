@@ -27,19 +27,16 @@ export default class Menu extends React.Component<MenuProps, {}> {
         <div className="inner">
           <ul className="links">
             <li><Link onClick={toggleMenu} to="/" aria-label="Home">Home</Link></li>
-            <li><Link onClick={toggleMenu} to="/news" aria-label="News">News</Link></li>
+            <li><a href="https://dsebastien.net/news" onClick={toggleMenu} aria-label="News">News</a></li>
             <li><Link onClick={toggleMenu} to="/services" aria-label="Services">Services</Link></li>
             <li><Link onClick={toggleMenu} to="/about" aria-label="About">About</Link></li>
             <li><Link onClick={toggleMenu} to="/team" aria-label="Team">Team</Link></li>
           </ul>
           <ul className="actions vertical">
-            {/*
-            <li><a href="#contact" onClick={this.props.onToggleMenu} className="button special fit" aria-label="Contact us">Contact us!</a></li>
-            */}
             <li><a href="#contact" onClick={this.props.onToggleMenu} className="button fit" aria-label="Contact us">Contact us!</a></li>
           </ul>
         </div>
-        <a className="close" onClick={this.props.onToggleMenu} href="javascript:" aria-label="Close">Close</a>
+        <a className="close" onClick={this.props.onToggleMenu} aria-label="Close">Close</a>
       </nav>
     );
   }

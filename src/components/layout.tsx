@@ -15,7 +15,7 @@ export interface LayoutState {
 }
 
 export default class Layout extends React.Component<LayoutProps, LayoutState> {
-  private timeoutId: number | undefined;
+  private timeoutId?: number;
 
   constructor(props: LayoutProps) {
     super(props);

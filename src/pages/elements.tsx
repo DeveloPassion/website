@@ -1,13 +1,14 @@
 import * as React from 'react';
 
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 
 import Layout from '../components/layout';
 
-import alone = require('../assets/images/alone.jpg');
-import architecture = require('../assets/images/architecture02.jpg');
-import data = require('../assets/images/data.jpg');
+import alone from '../assets/images/architecture02.jpg';
+import architecture from '../assets/images/architecture02.jpg';
+import data from '../assets/images/data.jpg';
 
+// tslint:disable-next-line
 const Elements = () => (
     <Layout>
         <Helmet>

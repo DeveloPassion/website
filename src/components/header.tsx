@@ -27,7 +27,7 @@ export default class Header extends React.Component<HeaderProps, {}> {
       <header className="header alt">
         <Link to="/" className="logo" aria-label="Home"><strong><span className="logoHome icon fa-icon fa-home" />DeveloPassion</strong></Link>
         <nav>
-          <a className="menu-link" onClick={toggleMenu} href="javascript:" aria-label="Menu">Menu</a>
+          <a className="menu-link" onClick={toggleMenu} aria-label="Menu">Menu</a>
         </nav>
       </header>
     );

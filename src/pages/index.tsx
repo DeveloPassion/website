@@ -1,18 +1,14 @@
 import * as React from 'react';
 
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 
 import {Link} from 'gatsby';
 
-import NonStretchedImage from "../components/non-stretched-image";
-
-import {graphql} from "gatsby";
-
 import Banner from '../components/banner';
 import Layout from '../components/layout';
-import {backgroundImage} from "../utils/images";
+import {StaticImage} from "gatsby-plugin-image";
 
-export default ({data}:any) => {
+export default () => {
   // tslint:disable-next-line:no-console
   console.log(`
 ______                   _        ______                 _               
@@ -46,7 +42,7 @@ Because passion makes all the difference.
       <div className="main">
         <section id="one" className="tiles">
           <article>
-            <NonStretchedImage fluid={data.imagePassion.childImageSharp.fluid} style={backgroundImage} />
+            <StaticImage src="../assets/images/passion.jpg" className="backgroundImg" alt="About" />
             <header className="major">
               <h3>About DeveloPassion</h3>
               <p>Learn more about our company.</p>
@@ -54,7 +50,7 @@ Because passion makes all the difference.
             <Link to="/about" className="link primary" title="About" aria-label="About" />
           </article>
           <article>
-            <NonStretchedImage fluid={data.imageServices.childImageSharp.fluid} style={backgroundImage} />
+            <StaticImage src="../assets/images/consultancy.jpg" className="backgroundImg" alt="Services" />
             <header className="major">
               <h3>Services</h3>
               <p>Discover our services.</p>
@@ -62,70 +58,15 @@ Because passion makes all the difference.
             <Link to="/services" className="link primary" title="Services" aria-label="Services" />
           </article>
           <article>
-            <NonStretchedImage fluid={data.imageTeam.childImageSharp.fluid} style={backgroundImage} />
+            <StaticImage src="../assets/images/team02.jpg" className="backgroundImg" alt="Team" />
             <header className="major">
               <h3>Team</h3>
               <p>Meet our team.</p>
             </header>
             <Link to="/team" className="link primary" title="Team" aria-label="Team" />
           </article>
-          <article>
-            <NonStretchedImage fluid={data.imageNews.childImageSharp.fluid} style={backgroundImage} />
-            <header className="major">
-              <h3>News</h3>
-              <p>Discover what we've been up to recently!</p>
-            </header>
-
-            <Link to="/news" className="link primary" title="News" aria-label="News" />
-          </article>
         </section>
-        {/*
-      <section id="two">
-        <div className="inner">
-          <header className="major">
-            <h2>News</h2>
-          </header>
-          
-          <ul className="actions">
-            <li><Link to="/news" className="button next" title="News" aria-label="News">Go!</Link></li>
-          </ul>
-        </div>
-      </section>
-      */}
       </div>
     </Layout>
   );
 }
-
-export const query = graphql`
-  query {
-    imagePassion:file(relativePath: { eq: "passion.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1280) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    imageServices:file(relativePath: { eq: "consultancy.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1500) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    imageTeam:file(relativePath: { eq: "team02.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1500) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    imageNews:file(relativePath: { eq: "news.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1500) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-  }
-`;

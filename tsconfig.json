@@ -35,7 +35,7 @@
     "noImplicitReturns": true,
     "noImplicitThis": false,
     "noImplicitUseStrict": false,
-    "noUnusedLocals": true,
+    "noUnusedLocals": false,
     "noUnusedParameters": true,
     "preserveConstEnums": true,
     "pretty": true,

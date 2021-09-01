@@ -1,15 +1,12 @@
 import * as React from 'react';
-
-import Helmet from 'react-helmet';
-
-import {graphql} from "gatsby";
+import { Helmet } from 'react-helmet';
 
 import BannerGeneric from '../components/banner-generic';
 import Layout from '../components/layout';
 
-import NonStretchedImage from "../components/non-stretched-image";
+import {StaticImage} from "gatsby-plugin-image";
 
-export default ({data}:any) => (
+export default () => (
   <Layout>
         <Helmet>
           <title>DeveloPassion Services</title>
@@ -41,7 +38,7 @@ export default ({data}:any) => (
           <section id="services-software-development" className="spotlights">
             <section>
               <span className="image">
-                <NonStretchedImage fluid={data.imageDevelopment.childImageSharp.fluid} alt="Software Development" />
+                <StaticImage src="../assets/images/keyboard.jpg" alt="Software Development" />
               </span>
               <div className="content">
                 <div className="inner">
@@ -59,7 +56,7 @@ export default ({data}:any) => (
 
             <section id="services-software-architecture">
               <span className="image">
-                <NonStretchedImage fluid={data.imageArchitecture.childImageSharp.fluid} alt="Software and enterprise architecture" />
+                <StaticImage src="../assets/images/architecture01.jpg" alt="Software and enterprise architecture" />
               </span>
               <div className="content">
                 <div className="inner">
@@ -74,7 +71,7 @@ export default ({data}:any) => (
 
             <section id="services-digital-transformation">
               <span className="image">
-                <NonStretchedImage fluid={data.imageDigital.childImageSharp.fluid} alt="Digital transformation and innovation" />
+                <StaticImage src="../assets/images/digital02.jpg" alt="Digital transformation and innovation" />
               </span>
               <div className="content">
                 <div className="inner">
@@ -88,7 +85,7 @@ export default ({data}:any) => (
 
             <section id="services-security-hardening">
               <span className="image">
-                <NonStretchedImage fluid={data.imageSecurity.childImageSharp.fluid} alt="Software and infrastructure security hardening" />
+                <StaticImage src="../assets/images/security.jpg" alt="Software and infrastructure security hardening" />
               </span>
               <div className="content">
                 <div className="inner">
@@ -102,7 +99,7 @@ export default ({data}:any) => (
 
             <section id="services-agile-pm">
               <span className="image">
-                <NonStretchedImage fluid={data.imageAgile.childImageSharp.fluid} alt="Agile project and team management" />
+                <StaticImage src="../assets/images/planning.jpg" alt="Agile project and team management" />
               </span>
               <div className="content">
                 <div className="inner">
@@ -117,43 +114,3 @@ export default ({data}:any) => (
         </div>
       </Layout>
     );
-
-export const query = graphql`
-  query {
-    imageArchitecture:file(relativePath: { eq: "architecture01.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1500) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    imageDigital:file(relativePath: { eq: "digital02.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1500) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    imageDevelopment:file(relativePath: { eq: "keyboard.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1500) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    imageSecurity:file(relativePath: { eq: "security.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1500) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    imageAgile:file(relativePath: { eq: "planning.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1500) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-  }
-`;

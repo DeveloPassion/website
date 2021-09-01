@@ -232,7 +232,7 @@ $vendor-values: ("filter", "flex", "linear-gradient", "radial-gradient", "transf
   $x: "";
 
   @if $breakpointName {
-    $x: "\\28" + $breakpointName + "\\29";
+    $x: "\\28"+ $breakpointName + "\\29";
   }
 
   .\31 2u#{$x},
