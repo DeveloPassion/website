@@ -1,12 +1,9 @@
 import * as React from 'react';
-
-import { Helmet } from 'react-helmet';
-
-import {Link} from 'gatsby';
-
 import Banner from '../components/banner';
 import Layout from '../components/layout';
+import {Link} from 'gatsby';
 import {StaticImage} from "gatsby-plugin-image";
+import {Helmet} from 'react-helmet';
 
 export default () => {
   // tslint:disable-next-line:no-console
@@ -47,7 +44,7 @@ Because passion makes all the difference.
               <h3>About DeveloPassion</h3>
               <p>Learn more about our company.</p>
             </header>
-            <Link to="/about" className="link primary" title="About" aria-label="About" />
+            <Link to="/about" className="link primary" title="About" />
           </article>
           <article>
             <StaticImage src="../assets/images/consultancy.jpg" className="backgroundImg" alt="Services" />
@@ -55,7 +52,7 @@ Because passion makes all the difference.
               <h3>Services</h3>
               <p>Discover our services.</p>
             </header>
-            <Link to="/services" className="link primary" title="Services" aria-label="Services" />
+            <Link to="/services" className="link primary" title="Services"  />
           </article>
           <article>
             <StaticImage src="../assets/images/team02.jpg" className="backgroundImg" alt="Team" />
@@ -63,7 +60,7 @@ Because passion makes all the difference.
               <h3>Team</h3>
               <p>Meet our team.</p>
             </header>
-            <Link to="/team" className="link primary" title="Team" aria-label="Team" />
+            <Link to="/team" className="link primary" title="Team" />
           </article>
         </section>
       </div>

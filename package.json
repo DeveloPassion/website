@@ -16,7 +16,6 @@
     "node": ">=8.12.0"
   },
   "dependencies": {
-    "@martin_hotell/rex-tils": "2.1.1",
     "gatsby": "3.13.0",
     "gatsby-image": "3.11.0",
     "gatsby-plugin-image": "1.13.0",
@@ -58,7 +57,7 @@
     "svg-react-loader": "0.4.6",
     "tslint-config-prettier": "1.18.0",
     "tslint-sonarts": "1.9.0",
-    "typescript": "4.4.2",
+    "typescript": "3.9.10",
     "gonzales-pe": "4.3.0"
   },
   "scripts": {
