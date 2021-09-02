@@ -35,7 +35,11 @@
     "No matter what, you've got to always follow your passion in life and always keep learning.",
     "Work hard! In the end, passion and hard work beats out natural talent."
   ],
-  "siteUrl": "https://www.developassion.be",
+  "site": {
+    "siteMetadata": {
+      "siteUrl": "https://www.developassion.be"
+    }
+  },
   "siteSources": "https://github.com/DeveloPassion/website",
   "social": {
     "blogSebastien": "https://www.dsebastien.net",

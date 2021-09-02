@@ -103,7 +103,7 @@ module.exports = {
               path
             }
           }
-      }`,
+        }`,
       serialize: ({ path, context }) => ({
         url: path,
         lastmod: (context && context.lastModified) || null,
