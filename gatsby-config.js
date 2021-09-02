@@ -100,10 +100,6 @@ module.exports = {
             }
           }
         }`,
-        serialize: ({ path, context }) => ({
-          url: path,
-          lastmod: (context && context.lastModified) || null,
-        }),
 			},
 		},
 		{
