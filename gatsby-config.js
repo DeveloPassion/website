@@ -94,20 +94,16 @@ module.exports = {
               siteUrl
             }
           }
- 
           allSitePage {
             nodes {
-              context {
-                lastModified
-              }
               path
             }
           }
         }`,
-      serialize: ({ path, context }) => ({
-        url: path,
-        lastmod: (context && context.lastModified) || null,
-      }),
+        serialize: ({ path, context }) => ({
+          url: path,
+          lastmod: (context && context.lastModified) || null,
+        }),
 			},
 		},
 		{
