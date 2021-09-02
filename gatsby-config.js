@@ -82,7 +82,7 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-sitemap`,
 			options: {
-				output: `/sitemap.xml`,
+				output: `/`,
 				// Exclude specific pages or groups of pages using glob parameters
 				// See: https://github.com/isaacs/minimatch
 				// The example below will exclude the single `path/to/page` and all routes beginning with `category`
@@ -97,10 +97,17 @@ module.exports = {
  
           allSitePage {
             nodes {
+              context {
+                lastModified
+              }
               path
             }
           }
       }`,
+      serialize: ({ path, context }) => ({
+        url: path,
+        lastmod: (context && context.lastModified) || null,
+      }),
 			},
 		},
 		{
