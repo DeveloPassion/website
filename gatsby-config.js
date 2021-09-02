@@ -106,7 +106,7 @@ module.exports = {
 			resolve: `gatsby-plugin-csp`,
 			options: {
 				disableOnDev: false,
-				mergeScriptHashes: true,
+				mergeScriptHashes: false,
 				mergeStyleHashes: false,
 				mergeDefaultDirectives: false,
 				// references:
