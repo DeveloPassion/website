@@ -1,9 +1,9 @@
 {
   "address": {
-    "street": "Rue des Masnuy",
-    "number": "193",
-    "postalCode": "7050",
-    "city": "Jurbise",
+    "street": "Route de Mons",
+    "number": "126",
+    "postalCode": "7130",
+    "city": "Binche",
     "country": "Belgium"
   },
   "author": "Sébastien Dubois",
@@ -53,8 +53,8 @@
     "newsletter": "https://mailchi.mp/fb661753d54a/developassion-newsletter"
   },
   "terms": {
-    "lastUpdate": "2019-01-07",
-    "fr": "/ConditionsGeneralesDeveloPassionV1.pdf",
+    "lastUpdate": "2023-09-29",
+    "fr": "/ConditionsGeneralesDeveloPassionV2.pdf",
     "version": "1"
   },
   "title": "DeveloPassion",

@@ -10,7 +10,7 @@ export default ({data}: any) => (
   <Layout>
     <Helmet>
       <title>DeveloPassion - Terms and conditions</title>
-      <meta name="description" content="DeveloPassion SPRL terms and conditions"/>
+      <meta name="description" content="DeveloPassion SRL terms and conditions"/>
     </Helmet>
 
     <div className="main alt">

@@ -41,7 +41,7 @@ const Footer = () => {
           </li>
         </ul>
         <ul className="copyright">
-          <li>&copy; {new Date().getFullYear()} DeveloPassion SPRL</li>
+          <li>&copy; {new Date().getFullYear()} DeveloPassion SRL</li>
           <li>TVA/VAT: {metadata.tva}</li>
           <li><a href={metadata.siteSources} className="icon alt fa-github fa-xs" target="_blank" rel="noreferrer" title="DeveloPassion's Website sources" aria-label="DeveloPassion's Website sources"/>
           </li>
